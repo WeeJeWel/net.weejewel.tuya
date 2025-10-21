@@ -1,3 +1,5 @@
+import crypto from 'crypto';
+
 import Homey, { CloudWebhook } from 'homey';
 import { fetch, OAuth2Client } from 'homey-oauth2app';
 import { nanoid } from 'nanoid';
@@ -5,6 +7,7 @@ import { Response } from 'node-fetch';
 
 import { URL } from 'url';
 import {
+  HA_TuyaHome,
   TuyaCommand,
   type TuyaDeviceDataPointResponse,
   TuyaDeviceResponse,
@@ -18,7 +21,6 @@ import {
 } from '../types/TuyaApiTypes';
 import { DeviceRegistration } from '../types/TuyaTypes';
 import * as TuyaOAuth2Constants from './TuyaOAuth2Constants';
-import { RegionCode } from './TuyaOAuth2Constants';
 
 import TuyaOAuth2Error from './TuyaOAuth2Error';
 
@@ -49,37 +51,99 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
   }
 
   // Sign the request
-  async onBuildRequest(props: {
+  async _executeRequest({
+    method,
+    path,
+    json,
+    body,
+    query = {},
+    headers = {},
+  }: {
     method: string;
     path: string;
     json: object;
     body: object;
     query: object;
     headers: object;
-  }): Promise<BuildRequest> {
-    const { url, opts } = await super.onBuildRequest({ ...props });
+  },
+    didRefreshToken = false,
+  ): Promise<void> {
+    if (this._refreshingToken) {
+      await this._refreshingToken;
+    }
+
+    console.log({
+      method,
+      path,
+      json,
+      body,
+      query,
+      headers,
+    })
 
     const token = this.getToken();
 
-    const urlInstance = new URL(url);
-    const signedHeaders = TuyaOAuth2Util.getSignedHeaders({
-      accessToken: token.access_token,
-      method: opts.method as string,
-      path: `${urlInstance.pathname}${urlInstance.search}`,
-      body: opts.body as string,
-      clientId: this._clientId,
-      clientSecret: this._clientSecret,
-    });
+    const requestUrl = new URL(`${token.endpoint}${path}`);
+    for (const [key, value] of Object.entries(query)) {
+      requestUrl.searchParams.append(key, value);
+    }
 
-    opts.headers = {
-      ...opts.headers,
-      ...signedHeaders,
+    const requestOptions = {
+      method,
+      headers,
+      body,
     };
 
-    return {
-      url,
-      opts,
+    const t = Date.now(); // Timestamp in milliseconds
+    const rid = crypto.randomUUID(); // Request ID
+    const sid = ''; // Session? ID
+    const hashKey = crypto.createHash('md5').update(`${rid}${token.refresh_token}`).digest('hex');
+    const secret = TuyaOAuth2Util.secretGenerating(rid, sid, hashKey);
+
+    let queryEncdata = ''; // TODO
+    // if (params && Object.keys(params).length > 0) {
+    //   queryEncdata = _form_to_json(params);
+    //   queryEncdata = _aes_gcm_encrypt(queryEncdata, secret);
+    //   params = { encdata: queryEncdata.toString("utf8") };
+    // }
+
+    let bodyEncdata = '';
+    if (json && Object.keys(json).length > 0) {
+      bodyEncdata = JSON.stringify(json);
+      bodyEncdata = TuyaOAuth2Util.aesGcmEncrypt(bodyEncdata, secret);
+      requestOptions.body = { encdata: bodyEncdata };
+    }
+
+    requestOptions.headers = {
+      'X-appKey': 'HA_3y9q4ak7g4ephrvke',
+      'X-requestId': rid,
+      'X-token': token.access_token,
+      'X-sid': sid,
+      'X-time': `${t}`,
+      'X-sign': TuyaOAuth2Util.restfulSign(hashKey, queryEncdata, bodyEncdata, {
+        'X-appKey': 'HA_3y9q4ak7g4ephrvke',
+        'X-requestId': rid,
+        'X-sid': sid,
+        'X-time': `${t}`,
+        'X-token': token.access_token,
+      }),
+      'Content-Type': 'application/json',
     };
+
+    console.log('requestUrl', requestUrl);
+    console.log('requestOptions', requestOptions);
+
+    try {
+      const response = await fetch(requestUrl.toString(), requestOptions);
+      const responseBody = await response.json();
+      console.log('responseBody', responseBody);
+
+      const responseBodyDecrypted = TuyaOAuth2Util.aesGcmDecrypt(responseBody.result, secret);
+      console.log('responseBodyDecrypted', responseBodyDecrypted);
+    } catch (err) {
+      console.error('Fetch error', err);
+      throw err;
+    }
   }
 
   async onShouldRefreshToken(response: Response): Promise<boolean> {
@@ -153,6 +217,10 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
   /*
    * API Methods
    */
+
+  async getHomesHA(): Promise<HA_TuyaHome[]> {
+    return this._get(`/v1.0/m/life/users/homes`);
+  }
 
   async getUserInfo(): Promise<TuyaUserInfo> {
     // https://developer.tuya.com/en/docs/cloud/cfebf22ad3?id=Kawfjdgic5c0w
@@ -237,8 +305,6 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
   }
 
   private async _get<T>(path: string): Promise<T> {
-    path = `${this.getToken().endpoint}${path}`;
-
     const requestId = nanoid();
     this.log('GET', requestId, path);
     return await this.get<T>({ path }).then(result => {
@@ -248,8 +314,6 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
   }
 
   private async _post<T>(path: string, payload?: unknown): Promise<T> {
-    path = `${this.getToken().endpoint}${path}`;
-
     const requestId = nanoid();
     this.log('POST', requestId, path, JSON.stringify(payload));
     return await this.post<T>({ path, json: payload }).then(result => {

@@ -22,6 +22,7 @@ declare module 'homey-oauth2app' {
     _token?: TToken;
     _clientId!: string;
     _clientSecret!: string;
+    _refreshingToken: Promise<void> | null;
 
     homey: Homey;
 
@@ -54,6 +55,7 @@ declare module 'homey-oauth2app' {
         method: unknown;
         body: unknown;
         headers: object;
+        secret?: string;
       };
       url: string;
     }>;

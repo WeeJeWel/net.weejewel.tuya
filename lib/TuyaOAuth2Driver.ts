@@ -44,10 +44,8 @@ export default class TuyaOAuth2Driver extends OAuth2Driver<TuyaOAuth2Client> {
     session.setHandler('getLinked', async () => {
       try {
         oAuth2Client = this.homey.app.getFirstSavedOAuth2Client();
-        console.log('oAuth2Client', oAuth2Client);
         return true;
       } catch (err) {
-        console.error('getLinked error', err);
         return false;
       }
     });

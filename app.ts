@@ -47,7 +47,11 @@ module.exports = class TuyaOAuth2App extends OAuth2App {
   async onOAuth2Init(): Promise<void> {
     await super.onOAuth2Init();
 
-    console.log('getSavedOAuth2Sessions:', this.getSavedOAuth2Sessions());
+    Promise.resolve().then(async () => {
+      const oAuth2Client = this.getFirstSavedOAuth2Client();
+      const devices = await oAuth2Client.getHomesHA();
+      console.log('devices', devices);
+    }).catch(err => this.error(err));
 
     const sendCommandRunListener = async ({
       device,

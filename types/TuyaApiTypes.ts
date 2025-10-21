@@ -3,6 +3,11 @@ type TuyaUserProperty = {
   value: string;
 };
 
+export type HA_TuyaHome = {
+  id: string;
+  name: string;
+};
+
 export type TuyaUserInfo = {
   create_time: number;
   user_properties: TuyaUserProperty[];

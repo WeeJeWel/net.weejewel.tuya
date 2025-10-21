@@ -1,4 +1,5 @@
 import crypto from 'crypto';
+
 import { TuyaDeviceResponse, TuyaStatusResponse } from '../types/TuyaApiTypes';
 import { Locale, SettingsEvent, Translation, TuyaStatus } from '../types/TuyaTypes';
 import TuyaOAuth2Device from './TuyaOAuth2Device';
@@ -333,4 +334,119 @@ export function fillTranslatableObject(
   }
 
   return translated;
+}
+
+// The following methods are ported from Python
+
+export function secretGenerating(rid: string, sid: string, hashKey: string): string {
+  let message = hashKey;
+  const mod = 16;
+
+  if (sid && sid.length > 0) {
+    const sidLength = sid.length;
+    const length = sidLength < mod ? sidLength : mod;
+    let ecode = "";
+
+    for (let i = 0; i < length; i++) {
+      const idx = sid.charCodeAt(i) % mod;
+      ecode += sid[idx];
+    }
+
+    message += `_${ecode}`;
+  }
+
+  const messageBuf = Buffer.from(message, "utf8");
+  const ridBuf = Buffer.from(rid, "utf8");
+
+  const checksum = crypto.createHmac("sha256", ridBuf).update(messageBuf).digest("hex");
+
+  // Return only the first 16 hex chars (8 bytes)
+  return checksum.slice(0, 16);
+}
+
+export function restfulSign(
+  hashKey: string,
+  queryEncdata: string | null,
+  bodyEncdata: string | null,
+  data: Record<string, any>
+): string {
+  const headers = ["X-appKey", "X-requestId", "X-sid", "X-time", "X-token"];
+  let headerSignStr = "";
+
+  for (const item of headers) {
+    const val = data[item] ?? "";
+    if (val !== "") {
+      headerSignStr += `${item}=${val}||`;
+    }
+  }
+
+  // Remove trailing "||"
+  let signStr = headerSignStr.endsWith("||")
+    ? headerSignStr.slice(0, -2)
+    : headerSignStr;
+
+  if (queryEncdata && queryEncdata !== "") {
+    signStr += queryEncdata;
+  }
+  if (bodyEncdata && bodyEncdata !== "") {
+    signStr += bodyEncdata;
+  }
+
+  const signStrBuf = Buffer.from(signStr, "utf8");
+  const hashKeyBuf = Buffer.from(hashKey, "utf8");
+
+  const hashValue = crypto
+    .createHmac("sha256", hashKeyBuf)
+    .update(signStrBuf)
+    .digest("hex");
+
+  return hashValue;
+}
+
+export function aesGcmEncrypt(rawData: string, secret: string): string {
+  const key = new TextEncoder().encode(secret); // UTF-8
+  if (key.length !== 16) {
+    throw new Error("Secret must be exactly 16 bytes (AES-128 key).");
+  }
+
+  const nonce = crypto.randomBytes(12); // 12-byte IV for GCM
+  const cipher = crypto.createCipheriv("aes-128-gcm", Buffer.from(key), nonce);
+
+  const ciphertext = Buffer.concat([
+    cipher.update(rawData, "utf8"),
+    cipher.final(),
+  ]);
+
+  const authTag = cipher.getAuthTag(); // 16 bytes
+  const payload = Buffer.concat([nonce, ciphertext, authTag]);
+
+  return payload.toString("base64");
+}
+
+/**
+ * Decrypts a base64 string produced by aesGcmEncrypt.
+ * Expects input = base64( nonce || (ciphertext || authTag) ).
+ */
+export function aesGcmDecrypt(cipherDataB64: string, secret: string): string {
+  const data = Buffer.from(cipherDataB64, "base64");
+
+  if (data.length < 12 + 16) {
+    throw new Error("Ciphertext too short.");
+  }
+
+  const key = new TextEncoder().encode(secret);
+  if (key.length !== 16) {
+    throw new Error("Secret must be exactly 16 bytes (AES-128 key).");
+  }
+
+  const nonce = data.subarray(0, 12);
+  const body = data.subarray(12);
+  const authTag = body.subarray(body.length - 16);
+  const ciphertext = body.subarray(0, body.length - 16);
+
+  const decipher = crypto.createDecipheriv("aes-128-gcm", Buffer.from(key), nonce);
+  decipher.setAuthTag(authTag);
+
+  const plaintext = Buffer.concat([decipher.update(ciphertext), decipher.final()]);
+  return plaintext.toString("utf8");
 }
