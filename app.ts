@@ -49,8 +49,20 @@ module.exports = class TuyaOAuth2App extends OAuth2App {
 
     Promise.resolve().then(async () => {
       const oAuth2Client = this.getFirstSavedOAuth2Client();
-      const devices = await oAuth2Client.getHomesHA();
-      console.log('devices', devices);
+
+      const mqttConfig = await oAuth2Client.getMQTTConfigurationHA();
+      console.log('mqttConfig', mqttConfig);
+
+      const homes = await oAuth2Client.getHomesHA();
+      console.log('homes', homes);
+
+      for (const home of homes) {
+        const scenes = await oAuth2Client.getScenesHA({ homeId: String(home.ownerId) });
+        console.log('scenes', scenes);
+
+        const devices = await oAuth2Client.getDevicesHA({ homeId: String(home.ownerId) });
+        console.log('devices', devices);
+      }
     }).catch(err => this.error(err));
 
     const sendCommandRunListener = async ({

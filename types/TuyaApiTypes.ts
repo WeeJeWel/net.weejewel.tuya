@@ -6,6 +6,7 @@ type TuyaUserProperty = {
 export type HA_TuyaHome = {
   id: string;
   name: string;
+  ownerId: string;
 };
 
 export type TuyaUserInfo = {

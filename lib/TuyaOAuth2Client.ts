@@ -55,14 +55,12 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
     method,
     path,
     json,
-    body,
     query = {},
     headers = {},
   }: {
     method: string;
     path: string;
     json: object;
-    body: object;
     query: object;
     headers: object;
   },
@@ -72,46 +70,33 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
       await this._refreshingToken;
     }
 
-    console.log({
-      method,
-      path,
-      json,
-      body,
-      query,
-      headers,
-    })
-
     const token = this.getToken();
 
     const requestUrl = new URL(`${token.endpoint}${path}`);
-    for (const [key, value] of Object.entries(query)) {
-      requestUrl.searchParams.append(key, value);
-    }
-
     const requestOptions = {
       method,
       headers,
-      body,
+      body: undefined as string | undefined,
     };
 
     const t = Date.now(); // Timestamp in milliseconds
     const rid = crypto.randomUUID(); // Request ID
-    const sid = ''; // Session? ID
+    const sid = ''; // Session ID
     const hashKey = crypto.createHash('md5').update(`${rid}${token.refresh_token}`).digest('hex');
     const secret = TuyaOAuth2Util.secretGenerating(rid, sid, hashKey);
 
-    let queryEncdata = ''; // TODO
-    // if (params && Object.keys(params).length > 0) {
-    //   queryEncdata = _form_to_json(params);
-    //   queryEncdata = _aes_gcm_encrypt(queryEncdata, secret);
-    //   params = { encdata: queryEncdata.toString("utf8") };
-    // }
+    let queryEncdata = '';
+    if (Object.keys(query).length > 0) {
+      queryEncdata = JSON.stringify(query);
+      queryEncdata = TuyaOAuth2Util.aesGcmEncrypt(queryEncdata, secret);
+      requestUrl.searchParams.append('encdata', queryEncdata);
+    }
 
     let bodyEncdata = '';
     if (json && Object.keys(json).length > 0) {
       bodyEncdata = JSON.stringify(json);
       bodyEncdata = TuyaOAuth2Util.aesGcmEncrypt(bodyEncdata, secret);
-      requestOptions.body = { encdata: bodyEncdata };
+      requestOptions.body = JSON.stringify({ encdata: bodyEncdata });
     }
 
     requestOptions.headers = {
@@ -130,29 +115,26 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
       'Content-Type': 'application/json',
     };
 
-    console.log('requestUrl', requestUrl);
-    console.log('requestOptions', requestOptions);
+    const response = await fetch(requestUrl.toString(), requestOptions);
+    const responseBodyJson = await response.json();
 
-    try {
-      const response = await fetch(requestUrl.toString(), requestOptions);
-      const responseBody = await response.json();
-      console.log('responseBody', responseBody);
+    if (responseBodyJson.success === false) {
+      // TODO: Check if we should refresh the token
+      if (responseBodyJson.msg === 'TODO_access_token_expired') {
+        if (didRefreshToken) {
+          throw new TuyaOAuth2Error('Access token expired, even after refresh', response.status, responseBodyJson.code);
+        }
 
-      const responseBodyDecrypted = TuyaOAuth2Util.aesGcmDecrypt(responseBody.result, secret);
-      console.log('responseBodyDecrypted', responseBodyDecrypted);
-    } catch (err) {
-      console.error('Fetch error', err);
-      throw err;
+        await this.refreshToken();
+        return this._executeRequest({ method, path, json, query, headers }, true);
+      }
+      throw new Error(`[${responseBodyJson.code}] ${responseBodyJson.msg}`);
     }
-  }
 
-  async onShouldRefreshToken(response: Response): Promise<boolean> {
-    const json = (await response.json()) as { code: number };
-    // @ts-expect-error legacy code
-    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-    response.json = () => json;
+    const responseBodyDecrypted = TuyaOAuth2Util.aesGcmDecrypt(responseBodyJson.result, secret);
+    const responseBodyDecryptedJson = JSON.parse(responseBodyDecrypted);
 
-    return json.code === TuyaOAuth2Constants.ERROR_CODES.ACCESS_TOKEN_EXPIRED;
+    return responseBodyDecryptedJson;
   }
 
   async onRefreshToken(): Promise<TuyaOAuth2Token> {
@@ -161,32 +143,34 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
       throw new TuyaOAuth2Error('Missing OAuth2 Token');
     }
 
-    const requestUrl = token.endpoint;
-    const requestMethod = 'GET';
-    const requestPath = `/v1.0/token/${token.refresh_token}`;
-    const requestHeaders = TuyaOAuth2Util.getSignedHeaders({
-      method: requestMethod,
-      path: requestPath,
-      clientId: this._clientId,
-      clientSecret: this._clientSecret,
-    });
+    throw new Error('Not Implemented');
 
-    const response = await fetch(`${requestUrl}${requestPath}`, {
-      method: requestMethod,
-      headers: requestHeaders,
-    });
-    const result = await response.json();
+    // const requestUrl = token.endpoint;
+    // const requestMethod = 'GET';
+    // const requestPath = `/v1.0/token/${token.refresh_token}`;
+    // const requestHeaders = TuyaOAuth2Util.getSignedHeaders({
+    //   method: requestMethod,
+    //   path: requestPath,
+    //   clientId: this._clientId,
+    //   clientSecret: this._clientSecret,
+    // });
 
-    const tokenJSON = (await this.onHandleResult({ result })) as TuyaToken;
+    // const response = await fetch(`${requestUrl}${requestPath}`, {
+    //   method: requestMethod,
+    //   headers: requestHeaders,
+    // });
+    // const result = await response.json();
 
-    this._token = new TuyaOAuth2Token({
-      ...token.toJSON(),
-      ...tokenJSON,
-    });
+    // const tokenJSON = (await this.onHandleResult({ result })) as TuyaToken;
 
-    this.save();
+    // this._token = new TuyaOAuth2Token({
+    //   ...token.toJSON(),
+    //   ...tokenJSON,
+    // });
 
-    return this._token;
+    // this.save();
+
+    // return this._token;
   }
 
   async onHandleResult({
@@ -219,7 +203,32 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
    */
 
   async getHomesHA(): Promise<HA_TuyaHome[]> {
-    return this._get(`/v1.0/m/life/users/homes`);
+    return this.get({
+      path: `/v1.0/m/life/users/homes`,
+    });
+  }
+
+  async getDevicesHA({ homeId }: { homeId: string }): Promise<TuyaDeviceResponse[]> {
+    return this.get({
+      path: `/v1.0/m/life/ha/home/devices`,
+      query: { homeId },
+    });
+  }
+
+  async getScenesHA({ homeId }: { homeId: string }): Promise<TuyaScenesResponse> {
+    return this.get({
+      path: `/v1.0/m/scene/ha/home/scenes`,
+      query: { homeId },
+    });
+  }
+
+  async getMQTTConfigurationHA(): Promise<any> {
+    return this.post({
+      path: '/v1.0/m/life/ha/access/config',
+      json: {
+        linkId: `tuya-device-sharing-sdk-python.26301f1a-ae93-11f0-8de9-0242ac120002`,
+      },
+    });
   }
 
   async getUserInfo(): Promise<TuyaUserInfo> {

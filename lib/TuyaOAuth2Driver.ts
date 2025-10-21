@@ -131,41 +131,49 @@ export default class TuyaOAuth2Driver extends OAuth2Driver<TuyaOAuth2Client> {
   }
 
   async onPairListDevices({ oAuth2Client }: { oAuth2Client: TuyaOAuth2Client }): Promise<OAuth2DeviceResult[]> {
-    const devices = await oAuth2Client.getDevices();
-    const filteredDevices = devices.filter(device => {
-      return !oAuth2Client.isRegistered(device.product_id, device.id) && this.onTuyaPairListDeviceFilter(device);
-    });
     const listDevices: OAuth2DeviceResult[] = [];
 
-    this.log('Listing devices to pair:');
-
-    for (const device of filteredDevices) {
-      this.log('Device:', JSON.stringify(TuyaOAuth2Util.redactFields(device)));
-      const deviceSpecs =
-        (await oAuth2Client
-          .getSpecification(device.id)
-          .catch(e => this.log('Device specification retrieval failed', e))) ?? undefined;
-      const dataPoints =
-        (await oAuth2Client.queryDataPoints(device.id).catch(e => this.log('Device properties retrieval failed', e))) ??
-        undefined;
-
-      // GitHub #178: Some device do not have the status property at all.
-      // Make sure to populate it with an empty array instead.
-      if (!Array.isArray(device.status)) {
-        device.status = [];
-      }
-
-      const deviceProperties = this.onTuyaPairListDeviceProperties({ ...device }, deviceSpecs, dataPoints);
-
-      listDevices.push({
-        ...deviceProperties,
-        name: device.name,
-        data: {
-          deviceId: device.id,
-          productId: device.product_id,
-        },
+    const homes = await oAuth2Client.getHomesHA();
+    for (const home of Object.values(homes)) {
+      const devices = await oAuth2Client.getDevicesHA({
+        homeId: home.ownerId,
       });
+      console.log('devices', devices);
+      const filteredDevices = devices.filter(device => {
+        return !oAuth2Client.isRegistered(device.product_id, device.id) && this.onTuyaPairListDeviceFilter(device);
+      });
+
+      this.log('Listing devices to pair:');
+
+      for (const device of filteredDevices) {
+        this.log('Device:', JSON.stringify(TuyaOAuth2Util.redactFields(device)));
+        const deviceSpecs =
+          (await oAuth2Client
+            .getSpecification(device.id)
+            .catch(e => this.log('Device specification retrieval failed', e))) ?? undefined;
+        const dataPoints =
+          (await oAuth2Client.queryDataPoints(device.id).catch(e => this.log('Device properties retrieval failed', e))) ??
+          undefined;
+
+        // GitHub #178: Some device do not have the status property at all.
+        // Make sure to populate it with an empty array instead.
+        if (!Array.isArray(device.status)) {
+          device.status = [];
+        }
+
+        const deviceProperties = this.onTuyaPairListDeviceProperties({ ...device }, deviceSpecs, dataPoints);
+
+        listDevices.push({
+          ...deviceProperties,
+          name: device.name,
+          data: {
+            deviceId: device.id,
+            productId: device.product_id,
+          },
+        });
+      }
     }
+
     return listDevices;
   }
 
