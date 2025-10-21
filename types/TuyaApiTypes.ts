@@ -23,6 +23,9 @@ export type TuyaToken = {
   access_token: string;
   uid: string;
   refresh_token: string;
+  endpoint: string;
+  terminal_id?: string;
+  username?: string;
 };
 export type TuyaCommand = {
   code: string;

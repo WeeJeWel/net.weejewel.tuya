@@ -1,0 +1,47 @@
+<style type="text/css">
+  .tuya-qrcode-title {
+    text-align: center;
+  }
+
+  .tuya-qrcode-text {
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+    color: #1c1c1c;
+  }
+
+  .tuya-qrcode-image {}
+
+  .tuya-qrcode-image>img {
+    width: 100%;
+  }
+</style>
+
+<h1
+  class="homey-title tuya-qrcode-title"
+  data-i18n="pair.qrcode.title"
+></h1>
+
+<p class="tuya-qrcode-text">
+  <span data-i18n="pair.qrcode.text"></span>
+</p>
+
+<div
+  id="tuya-qrcode-image"
+  class="tuya-qrcode-image"
+></div>
+
+<script type="text/javascript">
+  jQuery.getScript('./qrcode.assets/qrcode.min.js', async function () {
+    const qrcode = await Homey.getViewStoreValue('qrcode', 'qrcode');
+
+    new QRCode('tuya-qrcode-image', {
+      text: `tuyaSmart--qrLogin?token=${qrcode}`,
+      width: 1024,
+      height: 1024,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H,
+    });
+  });
+</script>

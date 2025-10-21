@@ -1,0 +1,89 @@
+<style type="text/css">
+  .tuya-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .tuya-grow {
+    flex-grow: 1;
+  }
+
+  .tuya-usercode-title {
+    text-align: center;
+  }
+
+  .tuya-usercode-text {
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+    color: #1c1c1c;
+  }
+
+  .tuya-usercode-input {
+    font-family: monospace !important;
+    font-size: 20px !important;
+    letter-spacing: 4px !important;
+    text-align: center !important;
+    margin-bottom: 12px !important;
+  }
+</style>
+
+<div class="tuya-wrap">
+  <h1
+    class="homey-title tuya-usercode-title"
+    data-i18n="pair.usercode.title"
+  ></h1>
+
+  <p class="tuya-usercode-text">
+    <span data-i18n="pair.usercode.text"></span>
+  </p>
+
+  <div class="tuya-grow"></div>
+
+  <input
+    id="tuya-usercode-input"
+    class="homey-form-input tuya-usercode-input"
+    type="text"
+    placeholder="_______"
+  />
+
+  <div class="tuya-grow"></div>
+
+  <button
+    id="tuya-usercode-submit"
+    class="homey-button homey-button-primary-shadow-full is-disabled"
+    data-i18n="pair.usercode.submit"
+  ></button>
+</div>
+
+<script type="text/javascript">
+  const input = document.getElementById('tuya-usercode-input');
+  const submit = document.getElementById('tuya-usercode-submit');
+
+  input.addEventListener('input', () => {
+    submit.classList.toggle('is-disabled', input.value.trim() === '');
+  });
+  input.addEventListener('keyup', (event) => {
+    if (event.key === 'Enter' && input.value.trim() !== '') {
+      submit.click();
+    }
+  });
+
+  submit.addEventListener('click', () => {
+    const usercode = input.value.trim();
+    if (!usercode) return;
+
+    submit.classList.add('is-loading');
+
+    Homey.emit('usercode', { usercode })
+      .then(async qrcode => {
+        await Homey.setViewStoreValue('qrcode', 'qrcode', qrcode);
+        await Homey.nextView();
+      })
+      .catch(err => Homey.alert(err))
+      .finally(() => {
+        submit.classList.remove('is-loading');
+      });
+  });
+</script>

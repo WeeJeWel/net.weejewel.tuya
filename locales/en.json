@@ -4,6 +4,15 @@
       "title": "Before you proceed...",
       "text": "To connect a Tuya device to Homey, add the device to the Tuya Smart or Smart Life app for Android or iOS first.",
       "link": "Learn more"
+    },
+    "usercode": {
+      "title": "Enter User Code",
+      "text": "Open the Tuya Smart or Smart Life app, tap Me, tap the Cog icon and then tap Account and Security. Find your User Code in the bottom, and enter it here.",
+      "submit": "Continue"
+    },
+    "qrcode": {
+      "title": "Scan QR Code",
+      "text": "In the Tuya Smart or Smart Life app, tap Me and tap the scan icon in the top-right corner. Finally, scan the QR Code."
     }
   },
   "connection_failed": "Connection failed",

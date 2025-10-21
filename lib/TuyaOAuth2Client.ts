@@ -40,15 +40,11 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
   // We can then list all authenticated users by name, e-mail and country flag.
   // This is useful for multiple account across Tuya brands & regions.
   async onGetOAuth2SessionInformation(): Promise<OAuth2SessionInformation> {
-    const userInfo = await this.getUserInfo();
+    const token = this.getToken();
 
     return {
-      id: userInfo.uid,
-      title: JSON.stringify({
-        name: userInfo.nick_name,
-        email: userInfo.email,
-        country_code: userInfo.country_code,
-      }),
+      id: token.uid,
+      title: token.username,
     };
   }
 
@@ -95,43 +91,13 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
     return json.code === TuyaOAuth2Constants.ERROR_CODES.ACCESS_TOKEN_EXPIRED;
   }
 
-  // The authorization code is Base64-encoded by tuya.athom.com to embed the 'region' as well.
-  // We need this to determine the API URL.
-  async onGetTokenByCode({ code }: { code: string }): Promise<TuyaOAuth2Token> {
-    const { region, code: authorizationCode } = JSON.parse(Buffer.from(code, 'base64').toString('utf-8'));
-
-    const requestUrl = TuyaOAuth2Constants.API_URL[region as RegionCode];
-    const requestMethod = 'GET';
-    const requestPath = `/v1.0/token?code=${authorizationCode}&grant_type=${TuyaOAuth2Constants.GRANT_TYPE.OAUTH2}`; // Tuya Cloud needs query parameters in alphabetical order...
-    const requestHeaders = TuyaOAuth2Util.getSignedHeaders({
-      method: requestMethod,
-      path: requestPath,
-      clientId: this._clientId,
-      clientSecret: this._clientSecret,
-    });
-
-    const response = await fetch(`${requestUrl}${requestPath}`, {
-      method: requestMethod,
-      headers: requestHeaders,
-    });
-    const result = await response.json();
-
-    const tokenJSON = (await this.onHandleResult({ result })) as TuyaToken;
-    this._token = new TuyaOAuth2Token({
-      ...tokenJSON,
-      region,
-    });
-
-    return this._token;
-  }
-
   async onRefreshToken(): Promise<TuyaOAuth2Token> {
     const token = this.getToken();
     if (!token) {
       throw new TuyaOAuth2Error('Missing OAuth2 Token');
     }
 
-    const requestUrl = TuyaOAuth2Constants.API_URL[token.region];
+    const requestUrl = token.endpoint;
     const requestMethod = 'GET';
     const requestPath = `/v1.0/token/${token.refresh_token}`;
     const requestHeaders = TuyaOAuth2Util.getSignedHeaders({
@@ -271,7 +237,7 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
   }
 
   private async _get<T>(path: string): Promise<T> {
-    path = `${TuyaOAuth2Constants.API_URL[this.getToken().region]}${path}`;
+    path = `${this.getToken().endpoint}${path}`;
 
     const requestId = nanoid();
     this.log('GET', requestId, path);
@@ -282,7 +248,7 @@ export default class TuyaOAuth2Client extends OAuth2Client<TuyaOAuth2Token> {
   }
 
   private async _post<T>(path: string, payload?: unknown): Promise<T> {
-    path = `${TuyaOAuth2Constants.API_URL[this.getToken().region]}${path}`;
+    path = `${this.getToken().endpoint}${path}`;
 
     const requestId = nanoid();
     this.log('POST', requestId, path, JSON.stringify(payload));

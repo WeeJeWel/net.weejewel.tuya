@@ -2885,12 +2885,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -2904,10 +2906,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "button",
@@ -2958,12 +2965,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -2977,10 +2986,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "camera",
@@ -3234,12 +3248,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -3253,10 +3269,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "socket",
@@ -3461,12 +3482,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -3480,10 +3503,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "light",
@@ -3691,12 +3719,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -3710,10 +3740,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "doorbell",
@@ -3965,12 +4000,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -3984,10 +4021,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "fan",
@@ -4071,12 +4113,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -4090,10 +4134,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "garagedoor",
@@ -4159,12 +4208,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -4178,10 +4229,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "heater",
@@ -4337,12 +4393,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -4356,10 +4414,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "watervalve",
@@ -4566,12 +4629,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -4585,10 +4650,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "light",
@@ -4778,12 +4848,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -4797,10 +4869,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "other",
@@ -4844,12 +4921,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -4863,10 +4942,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "sensor",
@@ -5043,12 +5127,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -5062,10 +5148,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "sensor",
@@ -5131,12 +5222,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -5150,10 +5243,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "sensor",
@@ -5256,12 +5354,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -5275,10 +5375,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "sensor",
@@ -5344,12 +5449,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -5363,10 +5470,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "sensor",
@@ -5432,12 +5544,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -5451,10 +5565,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "siren",
@@ -5543,12 +5662,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -5562,10 +5683,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "socket",
@@ -5770,12 +5896,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -5789,10 +5917,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "thermostat",
@@ -6175,12 +6308,14 @@
         {
           "id": "welcome",
           "navigation": {
-            "next": "login_oauth2"
+            "next": "usercode"
           }
         },
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode"
+        },
+        {
+          "id": "qrcode"
         },
         {
           "id": "list_devices",
@@ -6194,10 +6329,15 @@
           "template": "add_devices"
         }
       ],
-      "repair": [
+      "__disabled__repair": [
         {
-          "id": "login_oauth2",
-          "template": "login_oauth2"
+          "id": "usercode",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "qrcode"
         }
       ],
       "class": "windowcoverings",

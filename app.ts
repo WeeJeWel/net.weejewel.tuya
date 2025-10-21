@@ -39,8 +39,15 @@ module.exports = class TuyaOAuth2App extends OAuth2App {
 
   private apiCache: NodeCache = new NodeCache({ stdTTL: CACHE_TTL });
 
+  // TODO: Remove
+  async onShouldDeleteSession(): Promise<boolean> {
+    return false;
+  }
+
   async onOAuth2Init(): Promise<void> {
     await super.onOAuth2Init();
+
+    console.log('getSavedOAuth2Sessions:', this.getSavedOAuth2Sessions());
 
     const sendCommandRunListener = async ({
       device,

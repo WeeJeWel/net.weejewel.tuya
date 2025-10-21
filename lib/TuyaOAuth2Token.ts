@@ -1,40 +1,35 @@
 import { OAuth2Token } from 'homey-oauth2app';
-import { RegionCode } from './TuyaOAuth2Constants';
 
 export default class TuyaOAuth2Token extends OAuth2Token {
-  region: RegionCode;
+  endpoint: string;
   uid: string;
   expire_time: number;
+  terminal_id: string;
+  username: string;
 
   constructor({
-    region,
+    endpoint,
     uid,
     expire_time,
+    terminal_id,
+    username,
     ...props
   }: {
-    region: RegionCode;
+    endpoint: string;
     uid: string;
     expire_time: number;
     access_token: string;
     refresh_token: string;
-    token_type?: string;
-    expires_in?: number;
+    terminal_id: string;
+    username: string;
   }) {
     super({ ...props });
 
-    this.region = region;
-
-    /**
-     * User ID
-     * @property {String}
-     */
+    this.endpoint = endpoint;
     this.uid = uid;
-
-    /**
-     * Expires in (seconds)
-     * @property {Number}
-     */
     this.expire_time = expire_time;
+    this.terminal_id = terminal_id;
+    this.username = username;
   }
 
   toJSON(): {
@@ -42,15 +37,17 @@ export default class TuyaOAuth2Token extends OAuth2Token {
     refresh_token: string;
     uid: string;
     expire_time: number;
-    token_type?: string;
-    region: RegionCode;
-    expires_in?: number;
+    endpoint: string;
+    terminal_id: string;
+    username: string;
   } {
     return {
       ...super.toJSON(),
-      region: this.region,
+      endpoint: this.endpoint,
       uid: this.uid,
       expire_time: this.expire_time,
+      terminal_id: this.terminal_id,
+      username: this.username,
     };
   }
 }

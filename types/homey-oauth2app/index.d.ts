@@ -7,6 +7,7 @@ declare module 'homey-oauth2app' {
   export class OAuth2App extends Homey.App {
     onOAuth2Init(): Promise<void>;
 
+    getSavedOAuth2Sessions(): any[];
     getFirstSavedOAuth2Client(): OAuth2Client;
 
     homeyLog: Log;
@@ -34,6 +35,7 @@ declare module 'homey-oauth2app' {
 
     onShouldRefreshToken(args: { status: number }): Promise<boolean>;
 
+    setToken({ token }: { token: TToken }): void;
     getToken(): TToken;
 
     async refreshToken(...args): Promise<void>;
@@ -75,6 +77,8 @@ declare module 'homey-oauth2app' {
     onOAuth2Init(): Promise<void>;
 
     onPairListDevices(payload: { oAuth2Client: T }): Promise<OAuth2DeviceResult[]>;
+
+    getOAuth2ConfigId(): string;
 
     homey: Homey;
   }
@@ -119,5 +123,9 @@ declare module 'homey-oauth2app' {
 
   export class OAuth2Error {
     constructor(message: string, statusCode?: number);
+  }
+
+  export class OAuth2Util {
+    static getRandomId(): string;
   }
 }

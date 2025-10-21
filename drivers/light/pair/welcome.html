@@ -16,16 +16,16 @@
     font-size: 0;
   }
 
-  .tuya-welcome-link > span {
+  .tuya-welcome-link>span {
     vertical-align: middle;
     font-size: 17px;
   }
 
-  .tuya-welcome-link:hover > span {
+  .tuya-welcome-link:hover>span {
     text-decoration: underline;
   }
 
-  .tuya-welcome-link > img {
+  .tuya-welcome-link>img {
     height: 17px;
     vertical-align: middle;
     margin-top: 2px;
@@ -37,7 +37,10 @@
   }
 </style>
 
-<h1 class="homey-title tuya-welcome-title" data-i18n="pair.welcome.title"></h1>
+<h1
+  class="homey-title tuya-welcome-title"
+  data-i18n="pair.welcome.title"
+></h1>
 
 <p class="tuya-welcome-text">
   <span data-i18n="pair.welcome.text"></span>
@@ -56,5 +59,18 @@
 </p>
 
 <p class="tuya-welcome-text">
-  <img class="tuya-welcome-logos" src="./welcome.assets/logos.png" />
+  <img
+    class="tuya-welcome-logos"
+    src="./welcome.assets/logos.png"
+  />
 </p>
+
+<script type="text/javascript">
+  Homey.emit('getLinked')
+    .then(isLinked => {
+      if (isLinked === true) {
+        Homey.showView('list_devices');
+      }
+    })
+    .catch(err => Homey.alert(err));
+</script>
