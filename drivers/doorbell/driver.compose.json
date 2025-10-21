@@ -1,0 +1,16 @@
+{
+  "$extends": "tuya",
+  "class": "doorbell",
+  "name": {
+    "en": "Doorbell",
+    "nl": "Deurbel"
+  },
+  "capabilities": ["alarm_motion", "alarm_sound"],
+  "capabilitiesOptions": {
+    "alarm_motion": {
+      "title": {
+        "en": "Motion Detected"
+      }
+    }
+  }
+}

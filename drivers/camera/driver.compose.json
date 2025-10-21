@@ -1,0 +1,16 @@
+{
+  "$extends": "tuya",
+  "class": "camera",
+  "name": {
+    "en": "Camera",
+    "nl": "Camera"
+  },
+  "capabilities": ["alarm_motion", "alarm_sound", "alarm_crying_child", "alarm_pet"],
+  "capabilitiesOptions": {
+    "alarm_motion": {
+      "title": {
+        "en": "Motion Detected"
+      }
+    }
+  }
+}

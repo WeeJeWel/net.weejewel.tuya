@@ -1,0 +1,9 @@
+{
+  "$extends": "tuya",
+  "class": "heater",
+  "name": {
+    "en": "Heater",
+    "nl": "Verwarming"
+  },
+  "capabilities": ["onoff", "target_temperature", "measure_temperature"]
+}

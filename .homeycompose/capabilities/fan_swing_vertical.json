@@ -1,0 +1,10 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Fan Swing Vertical"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "button",
+  "icon": "assets/capabilities/fan_swing_vertical.svg"
+}

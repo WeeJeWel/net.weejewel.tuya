@@ -1,0 +1,6563 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.tuya",
+  "version": "1.4.2",
+  "compatibility": ">=12.0.1",
+  "brandColor": "#FF4800",
+  "sdk": 3,
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "name": {
+    "en": "Tuya"
+  },
+  "tags": {
+    "en": [
+      "Tuya",
+      "Tuya Smart",
+      "Smart Life",
+      "Accewit",
+      "Acesee",
+      "Action",
+      "Aerb",
+      "AGSHome",
+      "AICase",
+      "Aigital",
+      "Aigoss",
+      "Aigostar",
+      "AIIAT",
+      "Airrobo",
+      "AISIRER",
+      "Aixi-SHS",
+      "Aldi",
+      "Alfawise",
+      "Allomn",
+      "AMBOTHER",
+      "ANCCY",
+      "ANOOPSYCHE",
+      "ANT LED",
+      "Antela",
+      "Anten",
+      "Anwio",
+      "AOFO",
+      "Aouvik",
+      "Aoycocr",
+      "Avatar Controls",
+      "AWOW",
+      "AWQM",
+      "B.K.Licht",
+      "Baken",
+      "Bakibo",
+      "Bawoo",
+      "BeauFlw",
+      "Benexmart",
+      "Bibikoo",
+      "BITIWEND",
+      "BlitzWolf",
+      "BlumWay",
+      "Bomchin",
+      "Bomcosy",
+      "Borntechsz",
+      "Boxlood",
+      "Brilliant",
+      "Briloner",
+      "BrizLabs",
+      "BSEED",
+      "Bunnings",
+      "Calex",
+      "cDream",
+      "ChangM",
+      "Chanpak",
+      "Chesbung",
+      "Conpush",
+      "Coolous",
+      "Coosa",
+      "Cornesty",
+      "CROWN LED",
+      "Daybetter",
+      "Decdeal",
+      "DiCUNO",
+      "Didikit",
+      "Digdan",
+      "DMNSDD",
+      "Dogain",
+      "Duduzui",
+      "EACHEN",
+      "Eastiff",
+      "Ecoey",
+      "ECOOLBUY",
+      "EFUN",
+      "EIGHTREE",
+      "Eisaro",
+      "eMylo",
+      "Enerdock",
+      "Enklen",
+      "Esicoo",
+      "Essentials",
+      "Etersky",
+      "Eversecu",
+      "Eweya",
+      "Extsud",
+      "Fitop",
+      "FlinQ",
+      "FLSNT",
+      "Focket",
+      "Fornorm",
+      "Freecube",
+      "Fscotice",
+      "Fulighture",
+      "Galapara",
+      "Gaoducash",
+      "GBLife",
+      "Geevorks",
+      "Generic",
+      "Ghome",
+      "GoKlug",
+      "Goliath",
+      "Gosund",
+      "GreenSun",
+      "Grefic",
+      "Gremag",
+      "GX Diffuser",
+      "Hama",
+      "HBN",
+      "Headerbs",
+      "Helloify",
+      "Henmi",
+      "HEMA",
+      "Himojo",
+      "Homecube",
+      "Horsky",
+      "Houzetek",
+      "HSKB",
+      "HueLiv",
+      "Hykolity",
+      "Hyleton 314",
+      "Idinio",
+      "Infray",
+      "INNOVATE",
+      "INQMEGA",
+      "INSEETECH",
+      "INSMART",
+      "Iolloi",
+      "IOSICAM",
+      "JDONG",
+      "Jetencn",
+      "Jinvoo",
+      "Jisusu",
+      "Jomarto",
+      "JULES V",
+      "Kainsy",
+      "Kallrra",
+      "Kexin",
+      "Kingso",
+      "KKcool",
+      "KKmoon",
+      "Klas Remo",
+      "KNMY",
+      "KOAANW",
+      "KOBWA",
+      "Konesky",
+      "Koogeek",
+      "Kruidvat",
+      "Kshzmoto",
+      "L&E",
+      "Laduo",
+      "LaHuko",
+      "Laxihub",
+      "LBell",
+      "Le (Lepro)",
+      "Leegoal",
+      "Lefun",
+      "Leoeu",
+      "Lesim",
+      "Lezoe",
+      "Lidl",
+      "Lilon",
+      "Lingan",
+      "Linovum",
+      "Linptech",
+      "LOFTer",
+      "Lohas",
+      "Lomota",
+      "Loratap",
+      "LSC Smart",
+      "Lumary",
+      "Lumiman",
+      "Luminea",
+      "Luqun",
+      "Luvision",
+      "LVWIT",
+      "Lyasi",
+      "Lā Vestmon",
+      "Mamyok",
+      "MANZOKU",
+      "Maxcio",
+      "Maxsure",
+      "Meamor",
+      "Mengzhen",
+      "MiMoo",
+      "Minoston",
+      "MoesGo",
+      "MoKo",
+      "Monococo",
+      "Mukuxin",
+      "Mulandi",
+      "MustWin",
+      "Mycket",
+      "Nedis",
+      "Neo",
+      "Netvip",
+      "Newgoal",
+      "Nicetai",
+      "Nooie",
+      "Nous",
+      "Novostella",
+      "Nozdom",
+      "Oeegoo",
+      "Offdarks",
+      "Officework",
+      "OHMAX",
+      "Oluote",
+      "OMOTON",
+      "Onever",
+      "Onforu",
+      "Oppearl",
+      "Orbecco",
+      "Owfeel",
+      "Owsoo",
+      "Panamalar",
+      "Peteme",
+      "Poco",
+      "Porta",
+      "QBOX",
+      "Rodot",
+      "Saiham",
+      "Sainko",
+      "Samotech",
+      "Saudio",
+      "Senckit",
+      "SHILOOK",
+      "Sigor",
+      "Simbr",
+      "Slitinto",
+      "Smarthai",
+      "Sonew",
+      "SS Shovan",
+      "Subosi",
+      "SunAtom",
+      "SYLSTAR",
+      "Taloya",
+      "Tasmor",
+      "TECKIN",
+      "TedGem",
+      "Teekar",
+      "Teepao",
+      "Torkase",
+      "Towode",
+      "Treatlife",
+      "Tronisky",
+      "UCOMEN",
+      "UNEEDE",
+      "Unitec",
+      "Vansware",
+      "Vecino",
+      "Vine",
+      "Vislone",
+      "Vitutech",
+      "Waligh",
+      "Walmeck",
+      "Wlansmart",
+      "Wodondog",
+      "Womdee",
+      "Woox",
+      "Wsiiroon",
+      "XUXN",
+      "YANKIA",
+      "Yapmor",
+      "Yelomin",
+      "Yinkuu",
+      "Yinsan",
+      "Yiroka",
+      "YiYouTech",
+      "Youlala",
+      "YoulikeLP",
+      "YUNLIGHTS",
+      "Zaeel",
+      "ZonMar",
+      "ZOOZEE"
+    ]
+  },
+  "description": {
+    "en": "Connect any Tuya device with Homey"
+  },
+  "category": [
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Athom B.V.",
+    "email": "info@athom.com"
+  },
+  "support": "https://homey.app/support",
+  "source": "https://github.com/athombv/com.tuya",
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "Human no longer detected"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "sensor_human",
+              "capabilities": "alarm_human"
+            },
+            "title": {
+              "en": "Device"
+            }
+          }
+        ],
+        "id": "alarm_human_false"
+      },
+      {
+        "title": {
+          "en": "Human detected"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "sensor_human",
+              "capabilities": "alarm_human"
+            },
+            "title": {
+              "en": "Device"
+            }
+          }
+        ],
+        "id": "alarm_human_true"
+      },
+      {
+        "title": {
+          "en": "Child lock disabled"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "fan|heater|socket",
+              "capabilities": "child_lock"
+            },
+            "title": {
+              "en": "Device"
+            }
+          }
+        ],
+        "id": "child_lock_false"
+      },
+      {
+        "title": {
+          "en": "Child lock enabled"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "fan|heater|socket",
+              "capabilities": "child_lock"
+            },
+            "title": {
+              "en": "Device"
+            }
+          }
+        ],
+        "id": "child_lock_true"
+      },
+      {
+        "title": {
+          "en": "Eco-mode disabled"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "heater",
+              "capabilities": "eco_mode"
+            },
+            "title": {
+              "en": "Device"
+            }
+          }
+        ],
+        "id": "eco_mode_false"
+      },
+      {
+        "title": {
+          "en": "Eco-mode enabled"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "heater",
+              "capabilities": "eco_mode"
+            },
+            "title": {
+              "en": "Device"
+            }
+          }
+        ],
+        "id": "eco_mode_true"
+      },
+      {
+        "title": {
+          "en": "Receive a Tuya Status (Boolean)"
+        },
+        "titleFormatted": {
+          "en": "Status [[code]] gets a new Boolean value"
+        },
+        "hint": {
+          "en": "This is an advanced Flow card, that can be used to receive any status from a Tuya device. You can find the status codes in the Tuya API documentation at https://homey.link/tuya-docs. Data points available outside of this specification may not actually be reported by the device."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "button|camera|circuit_breaker|dimmer|doorbell|fan|garage_door|heater|irrigator|light|other|sensor_climate|sensor_contact|sensor_human|sensor_motion|sensor_smoke|siren|socket|thermostat|window_coverings"
+            },
+            "title": {
+              "en": "Device"
+            }
+          },
+          {
+            "name": "code",
+            "type": "autocomplete",
+            "title": {
+              "en": "Code"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "value",
+            "type": "boolean",
+            "title": {
+              "en": "Value"
+            },
+            "example": true
+          }
+        ],
+        "id": "receive_status_boolean"
+      },
+      {
+        "title": {
+          "en": "Receive a Tuya Status (JSON)"
+        },
+        "titleFormatted": {
+          "en": "Status [[code]] gets a new JSON value"
+        },
+        "hint": {
+          "en": "This is an advanced Flow card, that can be used to receive any status from a Tuya device. You can find the status codes in the Tuya API documentation at https://homey.link/tuya-docs. Data points available outside of this specification may not actually be reported by the device."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "button|camera|circuit_breaker|dimmer|doorbell|fan|garage_door|heater|irrigator|light|other|sensor_climate|sensor_contact|sensor_human|sensor_motion|sensor_smoke|siren|socket|thermostat|window_coverings"
+            },
+            "title": {
+              "en": "Device"
+            }
+          },
+          {
+            "name": "code",
+            "type": "autocomplete",
+            "title": {
+              "en": "Code"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "value",
+            "type": "string",
+            "title": {
+              "en": "Value"
+            },
+            "example": "[{\"enabled\": true}]"
+          }
+        ],
+        "id": "receive_status_json"
+      },
+      {
+        "title": {
+          "en": "Receive a Tuya Status (Number)"
+        },
+        "titleFormatted": {
+          "en": "Status [[code]] gets a new Number value"
+        },
+        "hint": {
+          "en": "This is an advanced Flow card, that can be used to receive any status from a Tuya device. You can find the status codes in the Tuya API documentation at https://homey.link/tuya-docs. Data points available outside of this specification may not actually be reported by the device."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "button|camera|circuit_breaker|dimmer|doorbell|fan|garage_door|heater|irrigator|light|other|sensor_climate|sensor_contact|sensor_human|sensor_motion|sensor_smoke|siren|socket|thermostat|window_coverings"
+            },
+            "title": {
+              "en": "Device"
+            }
+          },
+          {
+            "name": "code",
+            "type": "autocomplete",
+            "title": {
+              "en": "Code"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Value"
+            },
+            "example": 5.6
+          }
+        ],
+        "id": "receive_status_number"
+      },
+      {
+        "title": {
+          "en": "Receive a Tuya Status (String)"
+        },
+        "titleFormatted": {
+          "en": "Status [[code]] gets a new String value"
+        },
+        "hint": {
+          "en": "This is an advanced Flow card, that can be used to receive any status from a Tuya device. You can find the status codes in the Tuya API documentation at https://homey.link/tuya-docs. Data points available outside of this specification may not actually be reported by the device."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "button|camera|circuit_breaker|dimmer|doorbell|fan|garage_door|heater|irrigator|light|other|sensor_climate|sensor_contact|sensor_human|sensor_motion|sensor_smoke|siren|socket|thermostat|window_coverings"
+            },
+            "title": {
+              "en": "Device"
+            }
+          },
+          {
+            "name": "code",
+            "type": "autocomplete",
+            "title": {
+              "en": "Code"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "value",
+            "type": "string",
+            "title": {
+              "en": "Value"
+            },
+            "example": "color"
+          }
+        ],
+        "id": "receive_status_string"
+      },
+      {
+        "id": "button_sub_switch_pressed",
+        "title": {
+          "en": "Pressed switch"
+        },
+        "titleFormatted": {
+          "en": "Pressed [[switch]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=button"
+          },
+          {
+            "name": "switch",
+            "type": "autocomplete",
+            "title": {
+              "en": "Switch"
+            },
+            "placeholder": {
+              "en": "Switch 1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "button_sub_switch_clicked",
+        "title": {
+          "en": "Clicked switch"
+        },
+        "titleFormatted": {
+          "en": "Clicked [[switch]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=button"
+          },
+          {
+            "name": "switch",
+            "type": "autocomplete",
+            "title": {
+              "en": "Switch"
+            },
+            "placeholder": {
+              "en": "Switch 1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "button_sub_switch_double_clicked",
+        "title": {
+          "en": "Double clicked switch"
+        },
+        "titleFormatted": {
+          "en": "Double clicked [[switch]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=button"
+          },
+          {
+            "name": "switch",
+            "type": "autocomplete",
+            "title": {
+              "en": "Switch"
+            },
+            "placeholder": {
+              "en": "Switch 1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "button_knob_turned",
+        "title": {
+          "en": "Knob turned"
+        },
+        "titleFormatted": {
+          "en": "Knob turned [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=button&capabilities=hidden.knob_switch_mode_1"
+          },
+          {
+            "name": "value",
+            "type": "dropdown",
+            "title": {
+              "en": "Direction"
+            },
+            "values": [
+              {
+                "id": "clockwise_rotation",
+                "title": {
+                  "en": "Clockwise"
+                }
+              },
+              {
+                "id": "anticlockwise_rotation",
+                "title": {
+                  "en": "Counterclockwise"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "camera_alarm_crying_child_true",
+        "title": {
+          "en": "A crying child was detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=alarm_crying_child"
+          }
+        ]
+      },
+      {
+        "id": "camera_alarm_crying_child_false",
+        "title": {
+          "en": "Crying is no longer detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=alarm_crying_child"
+          }
+        ]
+      },
+      {
+        "id": "camera_alarm_pet_true",
+        "title": {
+          "en": "A pet was detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=alarm_pet"
+          }
+        ]
+      },
+      {
+        "id": "camera_alarm_pet_false",
+        "title": {
+          "en": "Pet is no longer detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=alarm_pet"
+          }
+        ]
+      },
+      {
+        "id": "camera_alarm_sound_true",
+        "title": {
+          "en": "A sound was detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=alarm_sound"
+          }
+        ]
+      },
+      {
+        "id": "camera_alarm_sound_false",
+        "title": {
+          "en": "Sound is no longer detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=alarm_sound"
+          }
+        ]
+      },
+      {
+        "id": "camera_doorbell_rang",
+        "title": {
+          "en": "Doorbell rang"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=hidden.doorbell"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_1_turned_off",
+        "title": {
+          "en": "Turned channel 1 off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.1"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_1_turned_on",
+        "title": {
+          "en": "Turned channel 1 on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.1"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_2_turned_off",
+        "title": {
+          "en": "Turned channel 2 off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.2"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_2_turned_on",
+        "title": {
+          "en": "Turned channel 2 on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.2"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_3_turned_off",
+        "title": {
+          "en": "Turned channel 3 off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.3"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_3_turned_on",
+        "title": {
+          "en": "Turned channel 3 on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.3"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_channel_1_dim_changed",
+        "title": {
+          "en": "Channel 1 dim-level changed"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Level"
+            },
+            "example": 0.5
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=dim.1"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_channel_2_dim_changed",
+        "title": {
+          "en": "Channel 2 dim-level changed"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Level"
+            },
+            "example": 0.5
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=dim.2"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_channel_3_dim_changed",
+        "title": {
+          "en": "Channel 3 dim-level changed"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Level"
+            },
+            "example": 0.5
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=dim.3"
+          }
+        ]
+      },
+      {
+        "id": "doorbell_alarm_crying_child_true",
+        "title": {
+          "en": "A crying child was detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=alarm_crying_child"
+          }
+        ]
+      },
+      {
+        "id": "doorbell_alarm_crying_child_false",
+        "title": {
+          "en": "Crying is no longer detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=alarm_crying_child"
+          }
+        ]
+      },
+      {
+        "id": "doorbell_alarm_pet_true",
+        "title": {
+          "en": "A pet was detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=alarm_pet"
+          }
+        ]
+      },
+      {
+        "id": "doorbell_alarm_pet_false",
+        "title": {
+          "en": "Pet is no longer detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=alarm_pet"
+          }
+        ]
+      },
+      {
+        "id": "doorbell_alarm_sound_true",
+        "title": {
+          "en": "A sound was detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=alarm_sound"
+          }
+        ]
+      },
+      {
+        "id": "doorbell_alarm_sound_false",
+        "title": {
+          "en": "Sound is no longer detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=alarm_sound"
+          }
+        ]
+      },
+      {
+        "id": "doorbell_rang",
+        "title": {
+          "en": "Doorbell rang"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell"
+          }
+        ]
+      },
+      {
+        "id": "fan_light_onoff_true",
+        "title": {
+          "en": "Light turned on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fan&capabilities=onoff.light"
+          }
+        ]
+      },
+      {
+        "id": "fan_light_onoff_false",
+        "title": {
+          "en": "Light turned off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fan&capabilities=onoff.light"
+          }
+        ]
+      },
+      {
+        "id": "fan_light_dim_changed",
+        "title": {
+          "en": "Light dim-level changed"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Level"
+            },
+            "example": 0.5
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fan&capabilities=dim.light"
+          }
+        ]
+      },
+      {
+        "id": "irrigator_rain_sensor_true",
+        "title": {
+          "en": "Rain detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=irrigator&capabilities=rain_sensor"
+          }
+        ]
+      },
+      {
+        "id": "irrigator_rain_sensor_false",
+        "title": {
+          "en": "Rain no longer detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=irrigator&capabilities=rain_sensor"
+          }
+        ]
+      },
+      {
+        "id": "irrigator_measure_battery.rain_sensor_changed",
+        "title": {
+          "en": "The rain sensor battery level changed"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "title": {
+              "en": "Battery"
+            },
+            "type": "number",
+            "example": 99
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=irrigator&capabilities=measure_battery.rain_sensor"
+          }
+        ]
+      },
+      {
+        "id": "irrigator_measure_battery.climate_sensor_changed",
+        "title": {
+          "en": "The climate sensor battery level changed"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "title": {
+              "en": "Battery"
+            },
+            "type": "number",
+            "example": 99
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=irrigator&capabilities=measure_battery.climate_sensor"
+          }
+        ]
+      },
+      {
+        "id": "light_switch_led_turned_on",
+        "highlight": true,
+        "title": {
+          "en": "Turned light on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=onoff.switch_led"
+          }
+        ]
+      },
+      {
+        "id": "light_switch_led_turned_off",
+        "highlight": true,
+        "title": {
+          "en": "Turned light off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=onoff.switch_led"
+          }
+        ]
+      },
+      {
+        "id": "light_switch_turned_on",
+        "highlight": true,
+        "title": {
+          "en": "Turned other switch on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=onoff.switch"
+          }
+        ]
+      },
+      {
+        "id": "light_switch_turned_off",
+        "highlight": true,
+        "title": {
+          "en": "Turned other switch off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=onoff.switch"
+          }
+        ]
+      },
+      {
+        "id": "socket_sub_switch_turned_off",
+        "highlight": true,
+        "title": {
+          "en": "Turned switch off"
+        },
+        "titleFormatted": {
+          "en": "Turned [[switch]] off"
+        },
+        "hint": {
+          "en": "A specific switch on the device turned off."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=socket&capabilities=onoff.switch_1|onoff.switch_2|onoff.switch_3|onoff.switch_4|onoff.switch_5|onoff.switch_6"
+          },
+          {
+            "name": "switch",
+            "type": "autocomplete",
+            "title": {
+              "en": "Switch"
+            },
+            "placeholder": {
+              "en": "Switch 1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "socket_sub_switch_turned_on",
+        "highlight": true,
+        "title": {
+          "en": "Turned switch on"
+        },
+        "titleFormatted": {
+          "en": "Turned [[switch]] on"
+        },
+        "hint": {
+          "en": "A specific switch on the device turned on."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=socket&capabilities=onoff.switch_1|onoff.switch_2|onoff.switch_3|onoff.switch_4|onoff.switch_5|onoff.switch_6"
+          },
+          {
+            "name": "switch",
+            "type": "autocomplete",
+            "title": {
+              "en": "Switch"
+            },
+            "placeholder": {
+              "en": "Switch 1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "thermostat_open_window_sensor_true",
+        "title": {
+          "en": "Open Window Detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=open_window_sensor"
+          }
+        ]
+      },
+      {
+        "id": "thermostat_open_window_sensor_false",
+        "title": {
+          "en": "Open Window No Longer Detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=open_window_sensor"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "title": {
+          "en": "Send a Tuya Command (Boolean)"
+        },
+        "titleFormatted": {
+          "en": "Set [[code]] to Boolean [[value]]"
+        },
+        "hint": {
+          "en": "This is an advanced Flow card, that can be used to send any command to a Tuya device. You can find the command codes in the Tuya API documentation at https://homey.link/tuya-docs."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "button|camera|circuit_breaker|dimmer|doorbell|fan|garage_door|heater|irrigator|light|other|sensor_climate|sensor_contact|sensor_human|sensor_motion|sensor_smoke|siren|socket|thermostat|window_coverings"
+            },
+            "title": {
+              "en": "Device"
+            }
+          },
+          {
+            "name": "code",
+            "type": "autocomplete",
+            "title": {
+              "en": "Code"
+            }
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ],
+        "id": "send_command_boolean"
+      },
+      {
+        "title": {
+          "en": "Send a Tuya Command (JSON)"
+        },
+        "titleFormatted": {
+          "en": "Set [[code]] to JSON [[value]]"
+        },
+        "hint": {
+          "en": "This is an advanced Flow card, that can be used to send any command to a Tuya device. You can find the command codes in the Tuya API documentation at https://homey.link/tuya-docs."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "button|camera|circuit_breaker|dimmer|doorbell|fan|garage_door|heater|irrigator|light|other|sensor_climate|sensor_contact|sensor_human|sensor_motion|sensor_smoke|siren|socket|thermostat|window_coverings"
+            },
+            "title": {
+              "en": "Device"
+            }
+          },
+          {
+            "name": "code",
+            "type": "autocomplete",
+            "title": {
+              "en": "Code"
+            }
+          },
+          {
+            "name": "value",
+            "type": "text",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ],
+        "id": "send_command_json"
+      },
+      {
+        "title": {
+          "en": "Send a Tuya Command (Number)"
+        },
+        "titleFormatted": {
+          "en": "Set [[code]] to Number [[value]]"
+        },
+        "hint": {
+          "en": "This is an advanced Flow card, that can be used to send any command to a Tuya device. You can find the command codes in the Tuya API documentation at https://homey.link/tuya-docs."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "button|camera|circuit_breaker|dimmer|doorbell|fan|garage_door|heater|irrigator|light|other|sensor_climate|sensor_contact|sensor_human|sensor_motion|sensor_smoke|siren|socket|thermostat|window_coverings"
+            },
+            "title": {
+              "en": "Device"
+            }
+          },
+          {
+            "name": "code",
+            "type": "autocomplete",
+            "title": {
+              "en": "Code"
+            }
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ],
+        "id": "send_command_number"
+      },
+      {
+        "title": {
+          "en": "Send a Tuya Command (String)"
+        },
+        "titleFormatted": {
+          "en": "Set [[code]] to String [[value]]"
+        },
+        "hint": {
+          "en": "This is an advanced Flow card, that can be used to send any command to a Tuya device. You can find the command codes in the Tuya API documentation at https://homey.link/tuya-docs."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": {
+              "driver_id": "button|camera|circuit_breaker|dimmer|doorbell|fan|garage_door|heater|irrigator|light|other|sensor_climate|sensor_contact|sensor_human|sensor_motion|sensor_smoke|siren|socket|thermostat|window_coverings"
+            },
+            "title": {
+              "en": "Device"
+            }
+          },
+          {
+            "name": "code",
+            "type": "autocomplete",
+            "title": {
+              "en": "Code"
+            }
+          },
+          {
+            "name": "value",
+            "type": "text",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ],
+        "id": "send_command_string"
+      },
+      {
+        "title": {
+          "en": "Trigger Tuya Scene"
+        },
+        "titleFormatted": {
+          "en": "Trigger [[scene]]"
+        },
+        "args": [
+          {
+            "name": "scene",
+            "type": "autocomplete",
+            "title": {
+              "en": "Tuya Scene"
+            }
+          }
+        ],
+        "id": "trigger_scene"
+      },
+      {
+        "id": "camera_cruise_switch",
+        "title": {
+          "en": "Set auto patrol"
+        },
+        "titleFormatted": {
+          "en": "Set auto patrol [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=cruise_switch"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "camera_siren_switch",
+        "title": {
+          "en": "Set siren"
+        },
+        "titleFormatted": {
+          "en": "Set siren [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=siren_switch"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "camera_motion_switch",
+        "title": {
+          "en": "Set motion detection"
+        },
+        "titleFormatted": {
+          "en": "Set motion detection [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=alarm_motion"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "camera_motion_tracking",
+        "title": {
+          "en": "Set motion tracking"
+        },
+        "titleFormatted": {
+          "en": "Set motion tracking [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "camera_decibel_switch",
+        "title": {
+          "en": "Set sound detection"
+        },
+        "titleFormatted": {
+          "en": "Set sound detection [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=alarm_sound"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "camera_cry_detection_switch",
+        "title": {
+          "en": "Set crying baby detection"
+        },
+        "titleFormatted": {
+          "en": "Set crying baby detection [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=alarm_crying_child"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "camera_pet_detection",
+        "title": {
+          "en": "Set pet detection"
+        },
+        "titleFormatted": {
+          "en": "Set pet detection [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera&capabilities=alarm_pet"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "camera_basic_nightvision",
+        "title": {
+          "en": "Set night mode"
+        },
+        "titleFormatted": {
+          "en": "Set night mode to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=camera"
+          },
+          {
+            "name": "value",
+            "type": "dropdown",
+            "title": {
+              "en": "Value"
+            },
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "Off"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "On"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "circuit_breaker_child_lock",
+        "title": {
+          "en": "Set child lock"
+        },
+        "titleFormatted": {
+          "en": "Set child lock [[value]]"
+        },
+        "hint": {
+          "en": "CAUTION: This setting is not supported by every circuit breaker."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=circuit_breaker"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_1_off",
+        "title": {
+          "en": "Turn channel 1 off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.1"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_1_on",
+        "title": {
+          "en": "Turn channel 1 on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.1"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_2_off",
+        "title": {
+          "en": "Turn channel 2 off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.2"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_2_on",
+        "title": {
+          "en": "Turn channel 2 on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.2"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_3_off",
+        "title": {
+          "en": "Turn channel 3 off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.3"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_3_on",
+        "title": {
+          "en": "Turn channel 3 on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.3"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_channel_1_dim",
+        "highlight": true,
+        "title": {
+          "en": "Dim channel 1"
+        },
+        "titleFormatted": {
+          "en": "Dim channel 1 to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=dim.1"
+          },
+          {
+            "name": "value",
+            "title": {
+              "en": "Level"
+            },
+            "type": "range",
+            "min": 0,
+            "max": 1,
+            "step": 0.1,
+            "value": 0.5,
+            "label": "%",
+            "labelMultiplier": 100,
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "dimmer_channel_2_dim",
+        "highlight": true,
+        "title": {
+          "en": "Dim channel 2"
+        },
+        "titleFormatted": {
+          "en": "Dim channel 2 to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=dim.2"
+          },
+          {
+            "name": "value",
+            "title": {
+              "en": "Level"
+            },
+            "type": "range",
+            "min": 0,
+            "max": 1,
+            "step": 0.1,
+            "value": 0.5,
+            "label": "%",
+            "labelMultiplier": 100,
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "dimmer_channel_3_dim",
+        "highlight": true,
+        "title": {
+          "en": "Dim channel 3"
+        },
+        "titleFormatted": {
+          "en": "Dim channel 3 to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=dim.3"
+          },
+          {
+            "name": "value",
+            "title": {
+              "en": "Level"
+            },
+            "type": "range",
+            "min": 0,
+            "max": 1,
+            "step": 0.1,
+            "value": 0.5,
+            "label": "%",
+            "labelMultiplier": 100,
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "doorbell_cruise_switch",
+        "title": {
+          "en": "Set auto patrol"
+        },
+        "titleFormatted": {
+          "en": "Set auto patrol [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=cruise_switch"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "doorbell_siren_switch",
+        "title": {
+          "en": "Set siren"
+        },
+        "titleFormatted": {
+          "en": "Set siren [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=siren_switch"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "doorbell_motion_switch",
+        "title": {
+          "en": "Set motion detection"
+        },
+        "titleFormatted": {
+          "en": "Set motion detection [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=alarm_motion"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "doorbell_motion_tracking",
+        "title": {
+          "en": "Set motion tracking"
+        },
+        "titleFormatted": {
+          "en": "Set motion tracking [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "doorbell_decibel_switch",
+        "title": {
+          "en": "Set sound detection"
+        },
+        "titleFormatted": {
+          "en": "Set sound detection [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=alarm_sound"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "doorbell_cry_detection_switch",
+        "title": {
+          "en": "Set crying baby detection"
+        },
+        "titleFormatted": {
+          "en": "Set crying baby detection [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=alarm_crying_child"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "doorbell_pet_detection",
+        "title": {
+          "en": "Set pet detection"
+        },
+        "titleFormatted": {
+          "en": "Set pet detection [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell&capabilities=alarm_pet"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "doorbell_basic_nightvision",
+        "title": {
+          "en": "Set night mode"
+        },
+        "titleFormatted": {
+          "en": "Set night mode to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=doorbell"
+          },
+          {
+            "name": "value",
+            "type": "dropdown",
+            "title": {
+              "en": "Value"
+            },
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "Off"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "On"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fan_light_on",
+        "title": {
+          "en": "Turn light on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fan&capabilities=onoff.light"
+          }
+        ]
+      },
+      {
+        "id": "fan_light_off",
+        "title": {
+          "en": "Turn light off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fan&capabilities=onoff.light"
+          }
+        ]
+      },
+      {
+        "id": "fan_light_dim",
+        "title": {
+          "en": "Dim light"
+        },
+        "titleFormatted": {
+          "en": "Dim light to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fan&capabilities=dim.light"
+          },
+          {
+            "name": "value",
+            "title": {
+              "en": "Level"
+            },
+            "type": "range",
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "value": 0.5,
+            "label": "%",
+            "labelMultiplier": 100,
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "fan_fan_direction",
+        "title": {
+          "en": "Set fan direction"
+        },
+        "titleFormatted": {
+          "en": "Set fan direction to [[value]]"
+        },
+        "hint": {
+          "en": "CAUTION: This setting is not supported by every fan."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fan"
+          },
+          {
+            "name": "value",
+            "title": {
+              "en": "Direction"
+            },
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "forward",
+                "title": {
+                  "en": "Forward"
+                }
+              },
+              {
+                "id": "backward",
+                "title": {
+                  "en": "Backward"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "heater_set_child_lock",
+        "title": {
+          "en": "Set child lock"
+        },
+        "titleFormatted": {
+          "en": "Set child lock [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=heater&capabilities=child_lock"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "heater_set_eco_mode",
+        "title": {
+          "en": "Set eco-mode"
+        },
+        "titleFormatted": {
+          "en": "Set eco-mode [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=heater&capabilities=eco_mode"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "light_switch_pir",
+        "title": {
+          "en": "Set motion detection"
+        },
+        "titleFormatted": {
+          "en": "Set motion detection [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=alarm_motion"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "light_standby_on",
+        "title": {
+          "en": "Set standby light"
+        },
+        "titleFormatted": {
+          "en": "Set standby light [[value]]"
+        },
+        "hint": {
+          "en": "CAUTION: This setting is not supported by every light."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "light_switch_led_on",
+        "highlight": true,
+        "title": {
+          "en": "Turn light on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=onoff.switch_led"
+          }
+        ]
+      },
+      {
+        "id": "light_switch_led_off",
+        "highlight": true,
+        "title": {
+          "en": "Turn light off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=onoff.switch_led"
+          }
+        ]
+      },
+      {
+        "id": "light_switch_on",
+        "highlight": true,
+        "title": {
+          "en": "Turn other switch on"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=onoff.switch"
+          }
+        ]
+      },
+      {
+        "id": "light_switch_off",
+        "highlight": true,
+        "title": {
+          "en": "Turn other switch off"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=onoff.switch"
+          }
+        ]
+      },
+      {
+        "id": "sensor_human_sensitivity",
+        "title": {
+          "en": "Set sensitivity"
+        },
+        "titleFormatted": {
+          "en": "Set sensitivity to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sensor_human"
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Sensitivity"
+            },
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "sensor_human_near_detection",
+        "title": {
+          "en": "Set nearest detection distance"
+        },
+        "titleFormatted": {
+          "en": "Set nearest detection distance to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sensor_human"
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Distance"
+            },
+            "placeholder": {
+              "en": "cm"
+            },
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "sensor_human_far_detection",
+        "title": {
+          "en": "Set furthest detection distance"
+        },
+        "titleFormatted": {
+          "en": "Set furthest detection distance to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sensor_human"
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Distance"
+            },
+            "placeholder": {
+              "en": "cm"
+            },
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "siren_alarm_volume",
+        "title": {
+          "en": "Set alarm volume"
+        },
+        "titleFormatted": {
+          "en": "Set alarm volume to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=siren"
+          },
+          {
+            "name": "value",
+            "type": "dropdown",
+            "title": {
+              "en": "Alarm volume"
+            },
+            "values": [
+              {
+                "id": "low",
+                "label": {
+                  "en": "Low"
+                }
+              },
+              {
+                "id": "middle",
+                "label": {
+                  "en": "Middle"
+                }
+              },
+              {
+                "id": "high",
+                "label": {
+                  "en": "High"
+                }
+              },
+              {
+                "id": "mute",
+                "label": {
+                  "en": "Muted"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "socket_sub_switch_off",
+        "highlight": true,
+        "title": {
+          "en": "Turn switch off"
+        },
+        "titleFormatted": {
+          "en": "Turn [[switch]] off"
+        },
+        "hint": {
+          "en": "Turn only a specific switch on the device off."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=socket&capabilities=onoff.switch_1|onoff.switch_2|onoff.switch_3|onoff.switch_4|onoff.switch_5|onoff.switch_6"
+          },
+          {
+            "name": "switch",
+            "type": "autocomplete",
+            "title": {
+              "en": "Switch"
+            },
+            "placeholder": {
+              "en": "Switch 1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "socket_sub_switch_on",
+        "highlight": true,
+        "title": {
+          "en": "Turn switch on"
+        },
+        "titleFormatted": {
+          "en": "Turn [[switch]] on"
+        },
+        "hint": {
+          "en": "Turn only a specific switch on the device on."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=socket&capabilities=onoff.switch_1|onoff.switch_2|onoff.switch_3|onoff.switch_4|onoff.switch_5|onoff.switch_6"
+          },
+          {
+            "name": "switch",
+            "type": "autocomplete",
+            "title": {
+              "en": "Switch"
+            },
+            "placeholder": {
+              "en": "Switch 1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "socket_child_lock",
+        "title": {
+          "en": "Set child lock"
+        },
+        "titleFormatted": {
+          "en": "Set child lock [[value]]"
+        },
+        "hint": {
+          "en": "CAUTION: This setting is not supported by every socket."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=socket"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "thermostat_night_mode",
+        "title": {
+          "en": "Set night mode"
+        },
+        "titleFormatted": {
+          "en": "Set night mode to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=night_mode"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "thermostat_frost_guard",
+        "title": {
+          "en": "Set frost guard"
+        },
+        "titleFormatted": {
+          "en": "Set frost guard to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=frost_guard"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "thermostat_eco_mode",
+        "title": {
+          "en": "Set eco mode"
+        },
+        "titleFormatted": {
+          "en": "Set eco mode to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=eco_mode"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "thermostat_child_lock",
+        "title": {
+          "en": "Set child lock"
+        },
+        "titleFormatted": {
+          "en": "Set child lock to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=child_lock"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "thermostat_fan_swing_vertical",
+        "title": {
+          "en": "Set vertical fan swing"
+        },
+        "titleFormatted": {
+          "en": "Set vertical fan swing to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=fan_swing_vertical"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "thermostat_fan_swing_horizontal",
+        "title": {
+          "en": "Set horizontal fan swing"
+        },
+        "titleFormatted": {
+          "en": "Set horizontal fan swing to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=fan_swing_horizontal"
+          },
+          {
+            "name": "value",
+            "type": "checkbox",
+            "title": {
+              "en": "Value"
+            }
+          }
+        ]
+      },
+      {
+        "id": "thermostat_legacy_fan_speed",
+        "title": {
+          "en": "Set fan speed"
+        },
+        "titleFormatted": {
+          "en": "Set fan speed to [[value]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=legacy_fan_speed"
+          },
+          {
+            "name": "value",
+            "type": "dropdown",
+            "title": {
+              "en": "Value"
+            },
+            "values": [
+              {
+                "id": "high",
+                "title": {
+                  "en": "High"
+                }
+              },
+              {
+                "id": "middle",
+                "title": {
+                  "en": "Middle"
+                }
+              },
+              {
+                "id": "low",
+                "title": {
+                  "en": "Low"
+                }
+              },
+              {
+                "id": "closed",
+                "title": {
+                  "en": "Closed"
+                }
+              },
+              {
+                "id": "auto",
+                "title": {
+                  "en": "Auto"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "id": "dimmer_sub_switch_1_is_on",
+        "title": {
+          "en": "Channel 1 is turned !{{on|off}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.1"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_2_is_on",
+        "title": {
+          "en": "Channel 2 is turned !{{on|off}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.2"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_sub_switch_3_is_on",
+        "title": {
+          "en": "Channel 3 is turned !{{on|off}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dimmer&capabilities=onoff.3"
+          }
+        ]
+      },
+      {
+        "id": "fan_light_is_on",
+        "title": {
+          "en": "Light is turned !{{on|off}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=fan&capabilities=onoff.light"
+          }
+        ]
+      },
+      {
+        "id": "irrigator_rain_sensor_is_true",
+        "title": {
+          "en": "Rain !{{is|is not}} detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=irrigator&capabilities=rain_sensor"
+          }
+        ]
+      },
+      {
+        "id": "light_switch_led_is_on",
+        "highlight": true,
+        "title": {
+          "en": "Light is turned !{{on|off}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=onoff.switch_led"
+          }
+        ]
+      },
+      {
+        "id": "light_switch_is_on",
+        "highlight": true,
+        "title": {
+          "en": "Other switch is turned !{{on|off}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=light&capabilities=onoff.switch"
+          }
+        ]
+      },
+      {
+        "id": "sensor_human_alarm_human_is_true",
+        "title": {
+          "en": "Human !{{is|is not}} detected"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=sensor_human&capabilities=alarm_human"
+          }
+        ]
+      },
+      {
+        "id": "socket_sub_switch_is_on",
+        "highlight": true,
+        "title": {
+          "en": "Switch is turned !{{on|off}}"
+        },
+        "titleFormatted": {
+          "en": "[[switch]] is turned !{{on|off}}"
+        },
+        "hint": {
+          "en": "A specific switch on the device is turned on/off."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=socket&capabilities=onoff.switch_1|onoff.switch_2|onoff.switch_3|onoff.switch_4|onoff.switch_5|onoff.switch_6"
+          },
+          {
+            "name": "switch",
+            "type": "autocomplete",
+            "title": {
+              "en": "Switch"
+            },
+            "placeholder": {
+              "en": "Switch 1"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "capabilities": [
+        "measure_battery"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/button/assets/images/small.png",
+        "large": "/drivers/button/assets/images/large.png",
+        "xlarge": "/drivers/button/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "button",
+      "name": {
+        "en": "Wireless Button",
+        "nl": "Draadloze Knop"
+      },
+      "energy": {
+        "batteries": [
+          "OTHER"
+        ]
+      },
+      "id": "button",
+      "settings": [
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "alarm_motion",
+        "alarm_sound",
+        "alarm_crying_child",
+        "alarm_pet"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/camera/assets/images/small.png",
+        "large": "/drivers/camera/assets/images/large.png",
+        "xlarge": "/drivers/camera/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "camera",
+      "name": {
+        "en": "Camera",
+        "nl": "Camera"
+      },
+      "capabilitiesOptions": {
+        "alarm_motion": {
+          "title": {
+            "en": "Motion Detected"
+          }
+        }
+      },
+      "id": "camera",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every camera."
+          },
+          "children": [
+            {
+              "id": "motion_switch",
+              "type": "checkbox",
+              "label": {
+                "en": "Motion Detection"
+              },
+              "value": false
+            },
+            {
+              "id": "motion_tracking",
+              "type": "checkbox",
+              "label": {
+                "en": "Motion Tracking"
+              },
+              "value": false
+            },
+            {
+              "id": "decibel_switch",
+              "type": "checkbox",
+              "label": {
+                "en": "Sound Detection"
+              },
+              "value": false
+            },
+            {
+              "id": "cry_detection_switch",
+              "type": "checkbox",
+              "label": {
+                "en": "Crying Baby Detection"
+              },
+              "value": false
+            },
+            {
+              "id": "pet_detection",
+              "type": "checkbox",
+              "label": {
+                "en": "Pet Detection"
+              },
+              "value": false
+            },
+            {
+              "id": "motion_sensitivity",
+              "type": "dropdown",
+              "label": {
+                "en": "Motion Sensitivity"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Low"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Medium"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "High"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "decibel_sensitivity",
+              "type": "dropdown",
+              "label": {
+                "en": "Sound Sensitivity"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Low"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "High"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "basic_nightvision",
+              "type": "dropdown",
+              "label": {
+                "en": "Night Mode"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Auto"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Off"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "On"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "basic_device_volume",
+              "type": "number",
+              "label": {
+                "en": "Device Volume"
+              },
+              "value": 8,
+              "min": 1,
+              "max": 10,
+              "step": 1
+            },
+            {
+              "id": "basic_anti_flicker",
+              "type": "dropdown",
+              "label": {
+                "en": "Anti-Flicker"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Disabled"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "50 Hz"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "60 Hz"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "basic_osd",
+              "type": "checkbox",
+              "label": {
+                "en": "Video Timestamp"
+              },
+              "value": true
+            },
+            {
+              "id": "basic_flip",
+              "type": "checkbox",
+              "label": {
+                "en": "Flip Video"
+              },
+              "value": false
+            },
+            {
+              "id": "basic_indicator",
+              "type": "checkbox",
+              "label": {
+                "en": "Status Indicator"
+              },
+              "value": false
+            }
+          ]
+        },
+        {
+          "id": "alarm_timeout",
+          "type": "number",
+          "label": {
+            "en": "Alarm Timeout"
+          },
+          "value": 10,
+          "min": 1,
+          "units": {
+            "en": "seconds"
+          }
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "onoff",
+        "measure_current",
+        "measure_power",
+        "measure_voltage"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/circuit_breaker/assets/images/small.png",
+        "large": "/drivers/circuit_breaker/assets/images/large.png",
+        "xlarge": "/drivers/circuit_breaker/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "socket",
+      "name": {
+        "en": "Circuit Breaker",
+        "nl": "Zekering"
+      },
+      "id": "circuit_breaker",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every circuit breaker."
+          },
+          "children": [
+            {
+              "id": "child_lock",
+              "type": "checkbox",
+              "label": {
+                "en": "Child Lock"
+              },
+              "hint": {
+                "en": "Whether the device is prevented from being controlled locally."
+              },
+              "value": false
+            },
+            {
+              "id": "relay_status",
+              "type": "dropdown",
+              "label": {
+                "en": "Turn On Behavior"
+              },
+              "hint": {
+                "en": "What status the device takes on when power is provided."
+              },
+              "value": "last",
+              "values": [
+                {
+                  "id": "power_on",
+                  "label": {
+                    "en": "On"
+                  }
+                },
+                {
+                  "id": "power_off",
+                  "label": {
+                    "en": "Off"
+                  }
+                },
+                {
+                  "id": "last",
+                  "label": {
+                    "en": "Last Status"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "measure_power_scaling",
+          "label": {
+            "en": "Power Measurement Scale"
+          },
+          "hint": {
+            "en": "By how much the power reported by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "measure_current_scaling",
+          "label": {
+            "en": "Current Measurement Scale"
+          },
+          "hint": {
+            "en": "By how much the current reported by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "measure_voltage_scaling",
+          "label": {
+            "en": "Voltage Measurement Scale"
+          },
+          "hint": {
+            "en": "By how much the voltage reported by the device is scaled."
+          },
+          "value": "1",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/dimmer/assets/images/small.png",
+        "large": "/drivers/dimmer/assets/images/large.png",
+        "xlarge": "/drivers/dimmer/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "light",
+      "name": {
+        "en": "Dimmer",
+        "nl": "Dimmer"
+      },
+      "id": "dimmer",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every dimmer."
+          },
+          "children": [
+            {
+              "id": "brightness_min_1",
+              "type": "number",
+              "label": {
+                "en": "Minimum Brightness 1"
+              },
+              "value": 0,
+              "min": 0,
+              "max": 100,
+              "step": 0.1,
+              "units": "%"
+            },
+            {
+              "id": "brightness_max_1",
+              "type": "number",
+              "label": {
+                "en": "Maximum Brightness 1"
+              },
+              "value": 100,
+              "min": 1,
+              "max": 100,
+              "step": 0.1,
+              "units": "%"
+            },
+            {
+              "id": "led_type_1",
+              "type": "dropdown",
+              "label": {
+                "en": "Lamp Type 1"
+              },
+              "value": "led",
+              "values": [
+                {
+                  "id": "led",
+                  "label": {
+                    "en": "LED"
+                  }
+                },
+                {
+                  "id": "incandescent",
+                  "label": {
+                    "en": "Incandescent"
+                  }
+                },
+                {
+                  "id": "halogen",
+                  "label": {
+                    "en": "Halogen"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "brightness_min_2",
+              "type": "number",
+              "label": {
+                "en": "Minimum Brightness 2"
+              },
+              "value": 0,
+              "min": 0,
+              "max": 100,
+              "step": 0.1,
+              "units": "%"
+            },
+            {
+              "id": "brightness_max_2",
+              "type": "number",
+              "label": {
+                "en": "Maximum Brightness 2"
+              },
+              "value": 100,
+              "min": 1,
+              "max": 100,
+              "step": 0.1,
+              "units": "%"
+            },
+            {
+              "id": "led_type_2",
+              "type": "dropdown",
+              "label": {
+                "en": "Lamp Type 2"
+              },
+              "value": "led",
+              "values": [
+                {
+                  "id": "led",
+                  "label": {
+                    "en": "LED"
+                  }
+                },
+                {
+                  "id": "incandescent",
+                  "label": {
+                    "en": "Incandescent"
+                  }
+                },
+                {
+                  "id": "halogen",
+                  "label": {
+                    "en": "Halogen"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "brightness_min_3",
+              "type": "number",
+              "label": {
+                "en": "Minimum Brightness 3"
+              },
+              "value": 0,
+              "min": 0,
+              "max": 100,
+              "step": 0.1,
+              "units": "%"
+            },
+            {
+              "id": "brightness_max_3",
+              "type": "number",
+              "label": {
+                "en": "Maximum Brightness 3"
+              },
+              "value": 100,
+              "min": 1,
+              "max": 100,
+              "step": 0.1,
+              "units": "%"
+            },
+            {
+              "id": "led_type_3",
+              "type": "dropdown",
+              "label": {
+                "en": "Lamp Type 3"
+              },
+              "value": "led",
+              "values": [
+                {
+                  "id": "led",
+                  "label": {
+                    "en": "LED"
+                  }
+                },
+                {
+                  "id": "incandescent",
+                  "label": {
+                    "en": "Incandescent"
+                  }
+                },
+                {
+                  "id": "halogen",
+                  "label": {
+                    "en": "Halogen"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "alarm_motion",
+        "alarm_sound"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/doorbell/assets/images/small.png",
+        "large": "/drivers/doorbell/assets/images/large.png",
+        "xlarge": "/drivers/doorbell/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "doorbell",
+      "name": {
+        "en": "Doorbell",
+        "nl": "Deurbel"
+      },
+      "capabilitiesOptions": {
+        "alarm_motion": {
+          "title": {
+            "en": "Motion Detected"
+          }
+        }
+      },
+      "id": "doorbell",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every doorbell."
+          },
+          "children": [
+            {
+              "id": "motion_switch",
+              "type": "checkbox",
+              "label": {
+                "en": "Motion Detection"
+              },
+              "value": false
+            },
+            {
+              "id": "motion_tracking",
+              "type": "checkbox",
+              "label": {
+                "en": "Motion Tracking"
+              },
+              "value": false
+            },
+            {
+              "id": "decibel_switch",
+              "type": "checkbox",
+              "label": {
+                "en": "Sound Detection"
+              },
+              "value": false
+            },
+            {
+              "id": "cry_detection_switch",
+              "type": "checkbox",
+              "label": {
+                "en": "Crying Baby Detection"
+              },
+              "value": false
+            },
+            {
+              "id": "pet_detection",
+              "type": "checkbox",
+              "label": {
+                "en": "Pet Detection"
+              },
+              "value": false
+            },
+            {
+              "id": "motion_sensitivity",
+              "type": "dropdown",
+              "label": {
+                "en": "Motion Sensitivity"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Low"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Medium"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "High"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "decibel_sensitivity",
+              "type": "dropdown",
+              "label": {
+                "en": "Sound Sensitivity"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Low"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "High"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "basic_nightvision",
+              "type": "dropdown",
+              "label": {
+                "en": "Night Mode"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Auto"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Off"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "On"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "basic_device_volume",
+              "type": "number",
+              "label": {
+                "en": "Device Volume"
+              },
+              "value": 8,
+              "min": 1,
+              "max": 10,
+              "step": 1
+            },
+            {
+              "id": "basic_anti_flicker",
+              "type": "dropdown",
+              "label": {
+                "en": "Anti-Flicker"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Disabled"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "50 Hz"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "60 Hz"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "basic_osd",
+              "type": "checkbox",
+              "label": {
+                "en": "Video Timestamp"
+              },
+              "value": true
+            },
+            {
+              "id": "basic_flip",
+              "type": "checkbox",
+              "label": {
+                "en": "Flip Video"
+              },
+              "value": false
+            },
+            {
+              "id": "basic_indicator",
+              "type": "checkbox",
+              "label": {
+                "en": "Status Indicator"
+              },
+              "value": false
+            }
+          ]
+        },
+        {
+          "id": "alarm_timeout",
+          "type": "number",
+          "label": {
+            "en": "Alarm Timeout"
+          },
+          "value": 10,
+          "min": 1,
+          "units": {
+            "en": "seconds"
+          }
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/fan/assets/images/small.png",
+        "large": "/drivers/fan/assets/images/large.png",
+        "xlarge": "/drivers/fan/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "fan",
+      "name": {
+        "en": "Fan"
+      },
+      "id": "fan",
+      "settings": [
+        {
+          "id": "enable_light_support",
+          "type": "checkbox",
+          "label": {
+            "en": "Enable light support"
+          },
+          "hints": {
+            "en": "Some fans have light capabilities (built-in lamp) and some don't. This is not always detected correctly: if the automatic detection failed you can adjust this setting."
+          },
+          "value": false
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every device."
+          },
+          "children": [
+            {
+              "id": "fan_direction",
+              "type": "dropdown",
+              "label": {
+                "en": "Fan direction"
+              },
+              "value": "forward",
+              "values": [
+                {
+                  "id": "forward",
+                  "label": {
+                    "en": "Forward"
+                  }
+                },
+                {
+                  "id": "backward",
+                  "label": {
+                    "en": "Backward"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "garagedoor_closed",
+        "alarm_contact"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/garage_door/assets/images/small.png",
+        "large": "/drivers/garage_door/assets/images/large.png",
+        "xlarge": "/drivers/garage_door/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "garagedoor",
+      "name": {
+        "en": "Garage Door",
+        "nl": "Garagedeur"
+      },
+      "id": "garage_door",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every device."
+          },
+          "children": [
+            {
+              "id": "tr_timecon",
+              "type": "number",
+              "label": {
+                "en": "Door travel time"
+              },
+              "hint": {
+                "en": "The time it takes for the door to open or close."
+              },
+              "units": {
+                "en": "seconds"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "onoff",
+        "target_temperature",
+        "measure_temperature"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/heater/assets/images/small.png",
+        "large": "/drivers/heater/assets/images/large.png",
+        "xlarge": "/drivers/heater/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "heater",
+      "name": {
+        "en": "Heater",
+        "nl": "Verwarming"
+      },
+      "id": "heater",
+      "settings": [
+        {
+          "id": "temp_set_scaling",
+          "label": {
+            "en": "Target Temperature Scale"
+          },
+          "hint": {
+            "en": "By how much the temperature targeted by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "temp_current_scaling",
+          "label": {
+            "en": "Measured Temperature Scale"
+          },
+          "hint": {
+            "en": "By how much the temperature measured by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "work_power_scaling",
+          "label": {
+            "en": "Measured Power Scale"
+          },
+          "hint": {
+            "en": "By how much the power measured by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "measure_water",
+        "meter_water",
+        "rain_sensor"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/irrigator/assets/images/small.png",
+        "large": "/drivers/irrigator/assets/images/large.png",
+        "xlarge": "/drivers/irrigator/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "watervalve",
+      "name": {
+        "en": "Water Valve",
+        "nl": "Waterkraan"
+      },
+      "capabilitiesOptions": {
+        "measure_battery.rain_sensor": {
+          "title": {
+            "en": "Rain sensor battery"
+          }
+        },
+        "measure_battery.climate_sensor": {
+          "title": {
+            "en": "Climate sensor battery"
+          }
+        }
+      },
+      "id": "irrigator",
+      "settings": [
+        {
+          "id": "measure_temperature_scaling",
+          "label": {
+            "en": "Measured Temperature Scale"
+          },
+          "hint": {
+            "en": "By how much the temperature measured by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "measure_humidity_scaling",
+          "label": {
+            "en": "Measured Humidity Scale"
+          },
+          "hint": {
+            "en": "By how much the humidity measured by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "measure_water_scaling",
+          "label": {
+            "en": "Measured Water Flow Scale"
+          },
+          "hint": {
+            "en": "By how much the water flow measured by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "meter_water_scaling",
+          "label": {
+            "en": "Metered Water Flow Scale"
+          },
+          "hint": {
+            "en": "By how much the water flow metered by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature",
+        "light_hue",
+        "light_saturation"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/light/assets/images/small.png",
+        "large": "/drivers/light/assets/images/large.png",
+        "xlarge": "/drivers/light/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "light",
+      "name": {
+        "en": "Light",
+        "nl": "Lamp"
+      },
+      "id": "light",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every light."
+          },
+          "children": [
+            {
+              "id": "switch_pir",
+              "type": "checkbox",
+              "label": {
+                "en": "Motion Detection"
+              },
+              "value": false
+            },
+            {
+              "id": "pir_sensitivity",
+              "type": "dropdown",
+              "label": {
+                "en": "Motion Sensitivity"
+              },
+              "value": "middle",
+              "values": [
+                {
+                  "id": "low",
+                  "label": {
+                    "en": "Low"
+                  }
+                },
+                {
+                  "id": "middle",
+                  "label": {
+                    "en": "Middle"
+                  }
+                },
+                {
+                  "id": "high",
+                  "label": {
+                    "en": "High"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "pir_delay",
+              "type": "number",
+              "label": {
+                "en": "Motion Trigger Period"
+              },
+              "hint": {
+                "en": "For how long the motion detection stays in the triggered state before going to the standby state."
+              },
+              "value": 20,
+              "min": 5,
+              "max": 3600,
+              "step": 1,
+              "units": {
+                "en": "seconds"
+              }
+            },
+            {
+              "id": "cds",
+              "type": "dropdown",
+              "label": {
+                "en": "Luminance Detection"
+              },
+              "hint": {
+                "en": "At what brightness the light can be triggered."
+              },
+              "value": "10lux",
+              "values": [
+                {
+                  "id": "5lux",
+                  "label": {
+                    "en": "5 Lux"
+                  }
+                },
+                {
+                  "id": "10lux",
+                  "label": {
+                    "en": "10 Lux"
+                  }
+                },
+                {
+                  "id": "300lux",
+                  "label": {
+                    "en": "300 Lux"
+                  }
+                },
+                {
+                  "id": "2000lux",
+                  "label": {
+                    "en": "2000 Lux"
+                  }
+                },
+                {
+                  "id": "now",
+                  "label": {
+                    "en": "Now"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "standby_on",
+              "type": "checkbox",
+              "label": {
+                "en": "Standby Light"
+              },
+              "hint": {
+                "en": "Whether the device stays in standby state after the trigger period is over."
+              },
+              "value": false
+            },
+            {
+              "id": "standby_time",
+              "type": "number",
+              "label": {
+                "en": "Standby Time"
+              },
+              "hint": {
+                "en": "How long the device stays in standby state after the trigger period is over."
+              },
+              "value": 360,
+              "min": 1,
+              "max": 480,
+              "step": 1,
+              "units": {
+                "en": "minutes"
+              }
+            },
+            {
+              "id": "standby_bright",
+              "type": "number",
+              "label": {
+                "en": "Standby Brightness"
+              },
+              "hint": {
+                "en": "How bright the device stays in standby state after the trigger period is over."
+              },
+              "value": 0,
+              "min": 0,
+              "max": 100,
+              "step": 0.1,
+              "units": {
+                "en": "%"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/other/assets/images/small.png",
+        "large": "/drivers/other/assets/images/large.png",
+        "xlarge": "/drivers/other/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "other",
+      "name": {
+        "en": "Other",
+        "nl": "Onbekend"
+      },
+      "id": "other",
+      "settings": [
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "measure_temperature",
+        "measure_humidity"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/sensor_climate/assets/images/small.png",
+        "large": "/drivers/sensor_climate/assets/images/large.png",
+        "xlarge": "/drivers/sensor_climate/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "sensor",
+      "name": {
+        "en": "Climate Sensor",
+        "nl": "Klimaatsensor"
+      },
+      "id": "sensor_climate",
+      "settings": [
+        {
+          "id": "va_temperature_scaling",
+          "label": {
+            "en": "Measured Temperature Scale"
+          },
+          "hint": {
+            "en": "By how much the temperature measured by the device is scaled."
+          },
+          "value": "1",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "va_humidity_scaling",
+          "label": {
+            "en": "Measured Humidity Scale"
+          },
+          "hint": {
+            "en": "By how much the humidity measured by the device is scaled."
+          },
+          "value": "1",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bright_value_scaling",
+          "label": {
+            "en": "Measured Brightness Scale"
+          },
+          "hint": {
+            "en": "By how much the brightness measured by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "use_alarm_timeout",
+          "type": "checkbox",
+          "hint": {
+            "en": "Turn the alarm off a set time after the start signal, even if no end signal is received."
+          },
+          "label": {
+            "en": "Use Alarm Timeout"
+          },
+          "value": false
+        },
+        {
+          "id": "alarm_timeout",
+          "type": "number",
+          "label": {
+            "en": "Alarm Timeout"
+          },
+          "value": 10,
+          "min": 1,
+          "units": {
+            "en": "seconds"
+          }
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "alarm_contact"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/sensor_contact/assets/images/small.png",
+        "large": "/drivers/sensor_contact/assets/images/large.png",
+        "xlarge": "/drivers/sensor_contact/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "sensor",
+      "name": {
+        "en": "Door Sensor",
+        "nl": "Deur Sensor"
+      },
+      "id": "sensor_contact",
+      "settings": [
+        {
+          "id": "use_alarm_timeout",
+          "type": "checkbox",
+          "hint": {
+            "en": "Turn the alarm off a set time after the start signal, even if no end signal is received."
+          },
+          "label": {
+            "en": "Use Alarm Timeout"
+          },
+          "value": false
+        },
+        {
+          "id": "alarm_timeout",
+          "type": "number",
+          "label": {
+            "en": "Alarm Timeout"
+          },
+          "value": 10,
+          "min": 1,
+          "units": {
+            "en": "seconds"
+          }
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "alarm_human"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/sensor_human/assets/images/small.png",
+        "large": "/drivers/sensor_human/assets/images/large.png",
+        "xlarge": "/drivers/sensor_human/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "sensor",
+      "name": {
+        "en": "Human Presence Sensor",
+        "nl": "Menselijke Aanwezigheid Sensor"
+      },
+      "id": "sensor_human",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every presence sensor."
+          },
+          "children": [
+            {
+              "id": "sensitivity",
+              "type": "number",
+              "label": {
+                "en": "Sensitivity"
+              },
+              "step": 1,
+              "value": 9
+            },
+            {
+              "id": "near_detection",
+              "type": "number",
+              "label": {
+                "en": "Nearest detection distance"
+              },
+              "step": 1,
+              "units": "cm",
+              "value": 450
+            },
+            {
+              "id": "far_detection",
+              "type": "number",
+              "label": {
+                "en": "Furthest detection distance"
+              },
+              "step": 1,
+              "units": "cm",
+              "value": 650
+            }
+          ]
+        },
+        {
+          "id": "use_alarm_timeout",
+          "type": "checkbox",
+          "hint": {
+            "en": "Turn the alarm off a set time after the start signal, even if no end signal is received."
+          },
+          "label": {
+            "en": "Use Alarm Timeout"
+          },
+          "value": false
+        },
+        {
+          "id": "alarm_timeout",
+          "type": "number",
+          "label": {
+            "en": "Alarm Timeout"
+          },
+          "value": 10,
+          "min": 1,
+          "units": {
+            "en": "seconds"
+          }
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "alarm_motion"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/sensor_motion/assets/images/small.png",
+        "large": "/drivers/sensor_motion/assets/images/large.png",
+        "xlarge": "/drivers/sensor_motion/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "sensor",
+      "name": {
+        "en": "Motion Sensor",
+        "nl": "Bewegingssensor"
+      },
+      "id": "sensor_motion",
+      "settings": [
+        {
+          "id": "use_alarm_timeout",
+          "type": "checkbox",
+          "hint": {
+            "en": "Turn the alarm off a set time after the start signal, even if no end signal is received."
+          },
+          "label": {
+            "en": "Use Alarm Timeout"
+          },
+          "value": false
+        },
+        {
+          "id": "alarm_timeout",
+          "type": "number",
+          "label": {
+            "en": "Alarm Timeout"
+          },
+          "value": 10,
+          "min": 1,
+          "units": {
+            "en": "seconds"
+          }
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "alarm_smoke"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/sensor_smoke/assets/images/small.png",
+        "large": "/drivers/sensor_smoke/assets/images/large.png",
+        "xlarge": "/drivers/sensor_smoke/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "sensor",
+      "name": {
+        "en": "Smoke Detector",
+        "nl": "Rookmelder"
+      },
+      "id": "sensor_smoke",
+      "settings": [
+        {
+          "id": "use_alarm_timeout",
+          "type": "checkbox",
+          "hint": {
+            "en": "Turn the alarm off a set time after the start signal, even if no end signal is received."
+          },
+          "label": {
+            "en": "Use Alarm Timeout"
+          },
+          "value": false
+        },
+        {
+          "id": "alarm_timeout",
+          "type": "number",
+          "label": {
+            "en": "Alarm Timeout"
+          },
+          "value": 10,
+          "min": 1,
+          "units": {
+            "en": "seconds"
+          }
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "onoff"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/siren/assets/images/small.png",
+        "large": "/drivers/siren/assets/images/large.png",
+        "xlarge": "/drivers/siren/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "siren",
+      "name": {
+        "en": "Siren",
+        "nl": "Sirene"
+      },
+      "id": "siren",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every device."
+          },
+          "children": [
+            {
+              "id": "alarm_volume",
+              "type": "dropdown",
+              "label": {
+                "en": "Alarm volume level"
+              },
+              "hint": {
+                "en": "The volume level of the siren."
+              },
+              "value": "middle",
+              "values": [
+                {
+                  "id": "low",
+                  "label": {
+                    "en": "Low"
+                  }
+                },
+                {
+                  "id": "middle",
+                  "label": {
+                    "en": "Middle"
+                  }
+                },
+                {
+                  "id": "high",
+                  "label": {
+                    "en": "High"
+                  }
+                },
+                {
+                  "id": "mute",
+                  "label": {
+                    "en": "Muted"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "onoff",
+        "measure_power"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/socket/assets/images/small.png",
+        "large": "/drivers/socket/assets/images/large.png",
+        "xlarge": "/drivers/socket/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "socket",
+      "name": {
+        "en": "Plug",
+        "nl": "Plug"
+      },
+      "id": "socket",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every socket."
+          },
+          "children": [
+            {
+              "id": "child_lock",
+              "type": "checkbox",
+              "label": {
+                "en": "Child Lock"
+              },
+              "hint": {
+                "en": "Whether the device is prevented from being controlled locally."
+              },
+              "value": false
+            },
+            {
+              "id": "relay_status",
+              "type": "dropdown",
+              "label": {
+                "en": "Turn On Behavior"
+              },
+              "hint": {
+                "en": "What status the device takes on when plugged in."
+              },
+              "value": "last",
+              "values": [
+                {
+                  "id": "power_on",
+                  "label": {
+                    "en": "On"
+                  }
+                },
+                {
+                  "id": "power_off",
+                  "label": {
+                    "en": "Off"
+                  }
+                },
+                {
+                  "id": "last",
+                  "label": {
+                    "en": "Last Status"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power_scaling",
+          "label": {
+            "en": "Power Measurement Scale"
+          },
+          "hint": {
+            "en": "By how much the power reported by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cur_current_scaling",
+          "label": {
+            "en": "Current Measurement Scale"
+          },
+          "hint": {
+            "en": "By how much the current reported by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cur_voltage_scaling",
+          "label": {
+            "en": "Voltage Measurement Scale"
+          },
+          "hint": {
+            "en": "By how much the voltage reported by the device is scaled."
+          },
+          "value": "1",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "measure_temperature",
+        "target_temperature"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/thermostat/assets/images/small.png",
+        "large": "/drivers/thermostat/assets/images/large.png",
+        "xlarge": "/drivers/thermostat/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "thermostat",
+      "name": {
+        "en": "Thermostat",
+        "nl": "Thermostaat"
+      },
+      "capabilitiesOptions": {
+        "thermostat_mode": {
+          "values": [
+            {
+              "id": "cold",
+              "title": {
+                "en": "Cold"
+              }
+            },
+            {
+              "id": "hot",
+              "title": {
+                "en": "Hot"
+              }
+            },
+            {
+              "id": "wind",
+              "title": {
+                "en": "Wind"
+              }
+            },
+            {
+              "id": "comfortable",
+              "title": {
+                "en": "Comfortable"
+              }
+            },
+            {
+              "id": "energy",
+              "title": {
+                "en": "Energy"
+              }
+            },
+            {
+              "id": "auto",
+              "title": {
+                "en": "Auto"
+              }
+            },
+            {
+              "id": "holiday",
+              "title": {
+                "en": "Holiday"
+              }
+            }
+          ]
+        },
+        "legacy_fan_speed": {
+          "values": [
+            {
+              "id": "high",
+              "title": {
+                "en": "High"
+              }
+            },
+            {
+              "id": "middle",
+              "title": {
+                "en": "Middle"
+              }
+            },
+            {
+              "id": "low",
+              "title": {
+                "en": "Low"
+              }
+            },
+            {
+              "id": "closed",
+              "title": {
+                "en": "Closed"
+              }
+            },
+            {
+              "id": "auto",
+              "title": {
+                "en": "Auto"
+              }
+            }
+          ]
+        }
+      },
+      "id": "thermostat",
+      "settings": [
+        {
+          "id": "target_temperature_scaling",
+          "label": {
+            "en": "Target Temperature Scale"
+          },
+          "hint": {
+            "en": "By how much the temperature targeted by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "measure_temperature_scaling",
+          "label": {
+            "en": "Measured Temperature Scale"
+          },
+          "hint": {
+            "en": "By how much the temperature measured by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "measure_humidity_scaling",
+          "label": {
+            "en": "Measured Humidity Scale"
+          },
+          "hint": {
+            "en": "By how much the humidity measured by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "measure_power_scaling",
+          "label": {
+            "en": "Measured Power Scale"
+          },
+          "hint": {
+            "en": "By how much the power measured by the device is scaled."
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "1"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "1/10"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "1/100"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "1/1000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every device."
+          },
+          "children": [
+            {
+              "id": "capacity_set",
+              "type": "dropdown",
+              "label": {
+                "en": "Power Setting"
+              },
+              "values": [
+                {
+                  "id": "2000W",
+                  "label": {
+                    "en": "2000 W"
+                  }
+                },
+                {
+                  "id": "3000W",
+                  "label": {
+                    "en": "3000 W"
+                  }
+                },
+                {
+                  "id": "5000W",
+                  "label": {
+                    "en": "5000 W"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "temp_correction",
+              "type": "number",
+              "label": {
+                "en": "Temperature Calibration"
+              },
+              "step": 1
+            },
+            {
+              "id": "sensor_choose",
+              "type": "dropdown",
+              "label": {
+                "en": "Sensor Selection"
+              },
+              "values": [
+                {
+                  "id": "in",
+                  "label": {
+                    "en": "Internal"
+                  }
+                },
+                {
+                  "id": "out",
+                  "label": {
+                    "en": "3000 W"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "backlight",
+              "type": "number",
+              "label": {
+                "en": "Backlight Brightness"
+              },
+              "step": 1,
+              "units": "%",
+              "min": 0,
+              "max": 100
+            },
+            {
+              "id": "backlight_enum",
+              "type": "dropdown",
+              "label": {
+                "en": "Quick Backlight Brightness"
+              },
+              "values": [
+                {
+                  "id": "closed",
+                  "label": {
+                    "en": "Off"
+                  }
+                },
+                {
+                  "id": "half_bright",
+                  "label": {
+                    "en": "Half brightness"
+                  }
+                },
+                {
+                  "id": "full_bright",
+                  "label": {
+                    "en": "Full brightness"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "window_check",
+              "type": "checkbox",
+              "label": {
+                "en": "Open Window Detection"
+              }
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    },
+    {
+      "capabilities": [
+        "windowcoverings_state",
+        "windowcoverings_set"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/window_coverings/assets/images/small.png",
+        "large": "/drivers/window_coverings/assets/images/large.png",
+        "xlarge": "/drivers/window_coverings/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "welcome",
+          "navigation": {
+            "next": "login_oauth2"
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "windowcoverings",
+      "name": {
+        "en": "Window coverings",
+        "nl": "Raambekleding"
+      },
+      "id": "window_coverings",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "NOTE: Some settings are not supported by every device."
+          },
+          "children": [
+            {
+              "id": "inverse",
+              "type": "checkbox",
+              "label": {
+                "en": "Inverse direction"
+              },
+              "value": false
+            }
+          ]
+        },
+        {
+          "id": "deviceSpecification",
+          "type": "label",
+          "label": {
+            "en": "Device Specification"
+          },
+          "hint": {
+            "en": "The Tuya specification of this device"
+          },
+          "value": "<not available>"
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "alarm_crying_child": {
+      "type": "boolean",
+      "title": {
+        "en": "Crying Child Detected"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Crying Child Detected"
+      },
+      "insightsTitleFalse": {
+        "en": "Crying Child No Longer Detected"
+      },
+      "icon": "assets/capabilities/detect_baby.svg"
+    },
+    "alarm_human": {
+      "type": "boolean",
+      "title": {
+        "en": "Human Detected"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Human Detected"
+      },
+      "insightsTitleFalse": {
+        "en": "Human No Longer Detected"
+      },
+      "icon": "assets/capabilities/alarm_human.svg"
+    },
+    "alarm_pet": {
+      "type": "boolean",
+      "title": {
+        "en": "Pet Detected"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Pet Detected"
+      },
+      "insightsTitleFalse": {
+        "en": "Pet No Longer Detected"
+      },
+      "icon": "assets/capabilities/detect_pet.svg"
+    },
+    "alarm_sound": {
+      "type": "boolean",
+      "title": {
+        "en": "Sound Detected"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Sound Detected"
+      },
+      "insightsTitleFalse": {
+        "en": "Sound No Longer Detected"
+      },
+      "icon": "assets/capabilities/detect_sound.svg"
+    },
+    "child_lock": {
+      "title": {
+        "en": "Child Lock"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": true,
+      "setable": true,
+      "icon": "assets/capabilities/child_lock.svg"
+    },
+    "cruise_switch": {
+      "type": "boolean",
+      "title": {
+        "en": "Auto Patrol"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "icon": "assets/capabilities/auto_patrol.svg"
+    },
+    "eco_mode": {
+      "type": "boolean",
+      "title": {
+        "en": "Eco-Mode"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "icon": "assets/capabilities/eco.svg"
+    },
+    "fan_swing_horizontal": {
+      "type": "boolean",
+      "title": {
+        "en": "Fan Swing Horizontal"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "icon": "assets/capabilities/fan_swing_horizontal.svg"
+    },
+    "fan_swing_vertical": {
+      "type": "boolean",
+      "title": {
+        "en": "Fan Swing Vertical"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "icon": "assets/capabilities/fan_swing_vertical.svg"
+    },
+    "fault": {
+      "type": "string",
+      "title": {
+        "en": "Status"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "assets/capabilities/fault.svg"
+    },
+    "frost_guard": {
+      "title": {
+        "en": "Frost Guard"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": true,
+      "setable": true,
+      "icon": "assets/capabilities/anti_frost_mode.svg"
+    },
+    "hidden": {
+      "type": "string",
+      "title": "hidden",
+      "getable": false,
+      "setable": false,
+      "uiComponent": null
+    },
+    "legacy_fan_speed": {
+      "type": "enum",
+      "title": {
+        "en": "Fan Speed"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "4",
+          "title": {
+            "en": "4"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "3"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "2"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "1"
+          }
+        }
+      ]
+    },
+    "night_mode": {
+      "title": {
+        "en": "Night Mode"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": true,
+      "setable": true,
+      "icon": "assets/capabilities/sleep_mode.svg"
+    },
+    "open_window_sensor": {
+      "type": "boolean",
+      "title": {
+        "en": "Open Window Detected"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Open Window Detected"
+      },
+      "insightsTitleFalse": {
+        "en": "Open Window No Longer Detected"
+      },
+      "icon": "assets/capabilities/open_window.svg"
+    },
+    "ptz_control_horizontal": {
+      "type": "enum",
+      "title": {
+        "en": "Horizontal Control"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "ternary",
+      "values": [
+        {
+          "id": "up",
+          "title": {
+            "en": "Left"
+          }
+        },
+        {
+          "id": "idle",
+          "title": {
+            "en": "Stop"
+          }
+        },
+        {
+          "id": "down",
+          "title": {
+            "en": "Right"
+          }
+        }
+      ]
+    },
+    "ptz_control_vertical": {
+      "type": "enum",
+      "title": {
+        "en": "Vertical Control"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "ternary",
+      "values": [
+        {
+          "id": "up",
+          "title": {
+            "en": "Up"
+          }
+        },
+        {
+          "id": "idle",
+          "title": {
+            "en": "Stop"
+          }
+        },
+        {
+          "id": "down",
+          "title": {
+            "en": "Down"
+          }
+        }
+      ]
+    },
+    "ptz_control_zoom": {
+      "type": "enum",
+      "title": {
+        "en": "Zoom Control"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "ternary",
+      "values": [
+        {
+          "id": "up",
+          "title": {
+            "en": "Increase Zoom"
+          }
+        },
+        {
+          "id": "idle",
+          "title": {
+            "en": "Stop"
+          }
+        },
+        {
+          "id": "down",
+          "title": {
+            "en": "Decrease Zoom"
+          }
+        }
+      ]
+    },
+    "rain_sensor": {
+      "type": "boolean",
+      "title": {
+        "en": "Rain Detected"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Rain Detected"
+      },
+      "insightsTitleFalse": {
+        "en": "Rain No Longer Detected"
+      },
+      "icon": "assets/capabilities/rain_sensor.svg"
+    },
+    "siren_switch": {
+      "type": "boolean",
+      "title": {
+        "en": "Siren"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "button",
+      "icon": "assets/capabilities/alarm_siren.svg"
+    }
+  }
+}

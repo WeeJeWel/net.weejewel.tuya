@@ -1,0 +1,9 @@
+{
+  "$extends": "tuya",
+  "class": "light",
+  "name": {
+    "en": "Dimmer",
+    "nl": "Dimmer"
+  },
+  "capabilities": ["onoff", "dim"]
+}

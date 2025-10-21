@@ -1,0 +1,9 @@
+{
+  "$extends": "tuya",
+  "class": "sensor",
+  "name": {
+    "en": "Smoke Detector",
+    "nl": "Rookmelder"
+  },
+  "capabilities": ["alarm_smoke"]
+}

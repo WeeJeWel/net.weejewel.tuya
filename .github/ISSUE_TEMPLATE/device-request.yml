@@ -1,0 +1,30 @@
+name: 💡 Device request
+description: Request support for a Tuya device
+title: '[Device request]: '
+labels:
+  - device request
+
+body:
+  - type: textarea
+    attributes:
+      label: Device information
+      description: "Please provide us with some information about the device, e.g. the manufacture's website"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Device specification
+      description: |
+        We will need some information about your device. To retrieve, please:
+
+        - Make sure you have the latest version of the Tuya Homey App installed
+        - Open https://my.homey.app using a laptop/desktop
+        - Add your device if you didn't already
+        - Open its settings and copy the specifications from the "Device Specification" setting
+        - Paste the value below
+
+        The device specification will look like `{ "device": ..., "specifications": ..., 'data_points': ...}`. If it shows `<not available>` you can either re-add your device, or add it as other/unknown to retrieve the correct value.
+
+        When this information is missing or incorrect, we will need to close your request!
+    validations:
+      required: true

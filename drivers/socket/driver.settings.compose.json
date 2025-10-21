@@ -1,0 +1,86 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "NOTE: Some settings are not supported by every socket."
+    },
+    "children": [
+      {
+        "id": "child_lock",
+        "type": "checkbox",
+        "label": {
+          "en": "Child Lock"
+        },
+        "hint": {
+          "en": "Whether the device is prevented from being controlled locally."
+        },
+        "value": false
+      },
+      {
+        "id": "relay_status",
+        "type": "dropdown",
+        "label": {
+          "en": "Turn On Behavior"
+        },
+        "hint": {
+          "en": "What status the device takes on when plugged in."
+        },
+        "value": "last",
+        "values": [
+          {
+            "id": "power_on",
+            "label": {
+              "en": "On"
+            }
+          },
+          {
+            "id": "power_off",
+            "label": {
+              "en": "Off"
+            }
+          },
+          {
+            "id": "last",
+            "label": {
+              "en": "Last Status"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$extends": "scaledProperty",
+    "id": "power_scaling",
+    "label": {
+      "en": "Power Measurement Scale"
+    },
+    "hint": {
+      "en": "By how much the power reported by the device is scaled."
+    }
+  },
+  {
+    "$extends": "scaledProperty",
+    "id": "cur_current_scaling",
+    "label": {
+      "en": "Current Measurement Scale"
+    },
+    "hint": {
+      "en": "By how much the current reported by the device is scaled."
+    }
+  },
+  {
+    "$extends": "scaledProperty",
+    "id": "cur_voltage_scaling",
+    "label": {
+      "en": "Voltage Measurement Scale"
+    },
+    "hint": {
+      "en": "By how much the voltage reported by the device is scaled."
+    },
+    "value": "1"
+  },
+  {
+    "$extends": "deviceSpecification"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "$extends": "tuya",
+  "class": "windowcoverings",
+  "name": {
+    "en": "Window coverings",
+    "nl": "Raambekleding"
+  },
+  "capabilities": ["windowcoverings_state", "windowcoverings_set"]
+}

@@ -1,0 +1,10 @@
+{
+  "title": {
+    "en": "Frost Guard"
+  },
+  "type": "boolean",
+  "uiComponent": "button",
+  "getable": true,
+  "setable": true,
+  "icon": "assets/capabilities/anti_frost_mode.svg"
+}
